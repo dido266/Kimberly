@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consulting · Kimberly-Ann Athayde</title>
-<meta name="description" content="When sponsorship delivery breaks, revenue follows. Kimberly-Ann Athayde fixes execution failures in sport. INR 100Cr+. 1,500+ matches. Zero delivery failures. 19 years.">
-<meta property="og:title" content="Consulting · Kimberly-Ann Athayde">
-<meta property="og:description" content="Fixing sponsorship and operational failures in sport. 19 years. INR 100Cr+. Zero delivery failures.">
+<title>Kimberly-Ann Athayde &middot; Sports Business Consultant &amp; Sponsorship Strategy Advisor, India</title>
+<meta name="description" content="Sports business and sponsorship strategy consultant advising brands, rights holders and investors across India and globally. Sponsorship activation, sports infrastructure consulting, commercial strategy and sports advisory services from 19 years inside the live environment.">
+<meta property="og:title" content="Kimberly-Ann Athayde · Sports Business Consultant & Sponsorship Strategy Advisor">
+<meta property="og:description" content="Sponsorship strategy, sponsorship activation, sports infrastructure consulting and commercial advisory for brands, rights holders and investors.">
 <meta property="og:image" content="https://dido266.github.io/Kimberly/thumbnail.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   RESET + VARIABLES
+   RESET + VARIABLES: matches index.html exactly
    ============================================================ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -22,21 +22,17 @@
   --gold:#c9a84c;--gold2:#e8c96a;
   --ivory:#f5f0e8;--ivory2:#ede7dc;--ivory3:#e0d8cc;
   --pearl:#cdf0e8;--pearl2:#9addd0;--pearl3:#6bbfb0;
-  --red:#e85d5d;
-  --white:#fff;--ink:#080c10;
+  --red:#e85d5d;--white:#fff;--ink:#080c10;
   --bdark:rgba(255,255,255,0.07);--bteal:rgba(0,184,156,0.2);
-  --ease:cubic-bezier(0.16,1,0.3,1);
-  --sp:clamp(1.4rem,5vw,5rem);
+  --ease:cubic-bezier(0.16,1,0.3,1);--sp:clamp(1.4rem,5vw,5rem);
 }
 html{scroll-behavior:smooth;overflow-x:hidden;}
 body{background:var(--slate);color:var(--white);font-family:'Barlow Condensed',sans-serif;overflow-x:hidden;}
 @media(pointer:fine){body{cursor:none;}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.15s!important;}}
 
-/* GRAIN TEXTURE */
 body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");opacity:0.022;background-size:160px 160px;}
 
-/* CUSTOM CURSOR */
 .cursor,.cursor-ring{display:none;}
 @media(pointer:fine){
   .cursor{display:block;position:fixed;top:0;left:0;z-index:9999;pointer-events:none;width:8px;height:8px;border-radius:50%;background:var(--teal2);transform:translate(-50%,-50%);mix-blend-mode:difference;}
@@ -44,28 +40,28 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
   .cursor-ring.hovered{width:52px;height:52px;border-color:var(--teal2);}
 }
 
-/* PROGRESS */
-.progress-bar{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--teal2),var(--teal3));z-index:1000;width:0%;transition:width 0.3s ease;}
+.progress-bar{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--teal2),var(--teal3));z-index:1000;width:0%;transition:width 0.15s ease;}
 
-/* TOP NAV */
+/* TOP NAV: same structure/classes as index.html */
 .top-nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:clamp(10px,2vh,16px) clamp(16px,4vw,40px);background:rgba(10,14,20,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--bdark);}
 .top-nav-logo{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(0.9rem,2.5vw,1.1rem);letter-spacing:0.1em;color:var(--white);text-decoration:none;}
 .top-nav-logo span{color:var(--teal2);}
-.nav-links{display:flex;align-items:center;gap:clamp(8px,2vw,28px);}
-.nav-link{font-family:'DM Mono',monospace;font-size:clamp(0.42rem,1.2vw,0.58rem);letter-spacing:0.22em;text-transform:uppercase;color:var(--pearl3);text-decoration:none;transition:color 0.2s;white-space:nowrap;}
-.nav-link:hover,.nav-link.active{color:var(--teal2);}
-@media(max-width:600px){.nav-link.hide-mob{display:none;}}
-.nav-cta{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.52rem,1.4vw,0.65rem);letter-spacing:0.22em;text-transform:uppercase;padding:clamp(7px,1.3vh,10px) clamp(14px,2.8vw,24px);background:var(--teal);color:var(--slate);text-decoration:none;transition:all 0.25s;}
-.nav-cta:hover{background:var(--teal2);transform:translateY(-1px);}
+.top-nav-menu{display:flex;align-items:center;gap:clamp(8px,2vw,28px);}
+.top-nav-link{font-family:'DM Mono',monospace;font-size:clamp(0.42rem,1.2vw,0.58rem);letter-spacing:0.22em;text-transform:uppercase;color:var(--pearl3);text-decoration:none;transition:color 0.2s;white-space:nowrap;}
+.top-nav-link:hover{color:var(--teal2);}
+.top-nav-cta{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.52rem,1.4vw,0.65rem);letter-spacing:0.22em;text-transform:uppercase;padding:clamp(7px,1.3vh,10px) clamp(14px,2.8vw,24px);background:var(--teal);color:var(--slate);text-decoration:none;transition:all 0.25s;}
+.top-nav-cta:hover{background:var(--teal2);transform:translateY(-1px);}
+@media(max-width:768px){.hide-mobile{display:none;}}
 
-/* STICKY JUMP NAV */
-.jump-nav{position:sticky;top:clamp(44px,7vh,60px);z-index:800;background:rgba(10,14,20,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--bdark);padding:0 var(--sp);}
-.jump-nav-inner{display:flex;align-items:stretch;overflow-x:auto;scrollbar-width:none;gap:0;}
-.jump-nav-inner::-webkit-scrollbar{display:none;}
-.jn-link{font-family:'DM Mono',monospace;white-space:nowrap;flex-shrink:0;font-size:clamp(0.38rem,0.92vw,0.5rem);letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;padding:clamp(10px,1.8vh,15px) clamp(12px,2.2vw,22px);border-right:1px solid var(--bdark);border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;flex-shrink:0;}
-.jn-link:hover{color:var(--teal2);border-bottom-color:var(--teal2);}
-.jn-link.jn-cta{background:var(--teal);color:var(--slate);font-weight:700;border-right:none;margin-left:auto;}
-.jn-link.jn-cta:hover{background:var(--teal2);border-bottom-color:transparent;}
+/* MOBILE BOTTOM NAV: same structure as index.html */
+.mobile-nav{display:none;}
+@media(max-width:768px){
+  .mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:900;background:rgba(10,14,20,0.96);backdrop-filter:blur(20px);border-top:1px solid var(--bdark);padding:6px 4px calc(6px + env(safe-area-inset-bottom));justify-content:space-around;}
+  .mob-nav-btn{display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:none;color:rgba(255,255,255,0.4);font-family:'DM Mono',monospace;font-size:0.44rem;letter-spacing:0.08em;text-transform:uppercase;padding:6px 4px;flex:1;transition:color 0.2s;}
+  .mob-nav-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;}
+  .mob-nav-btn.active{color:var(--teal2);}
+  body{padding-bottom:56px;}
+}
 
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity 0.85s var(--ease),transform 0.85s var(--ease);}
@@ -78,8 +74,10 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
 .eyebrow::before{content:'';width:24px;height:1px;background:var(--teal2);flex-shrink:0;}
 .eyebrow::after{content:'';flex:1;height:1px;background:rgba(0,212,184,0.12);}
 .sp{padding:clamp(72px,11vh,100px) var(--sp) clamp(40px,7vh,72px);}
+.section-title{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(1.8rem,4.2vw,3.4rem);line-height:1.05;color:var(--white);margin-bottom:clamp(12px,2.2vh,18px);}
+.section-title em{font-style:italic;color:var(--teal2);}
+.section-sub{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.78rem,1.4vw,0.95rem);color:rgba(205,240,232,0.55);max-width:620px;line-height:1.75;}
 
-/* BUTTONS */
 .btn{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.6rem,1.4vw,0.72rem);letter-spacing:0.24em;text-transform:uppercase;padding:clamp(12px,2vh,16px) clamp(24px,4.5vw,48px);text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:all 0.3s;cursor:pointer;border:none;position:relative;overflow:hidden;}
 .btn::before{content:'';position:absolute;inset:0;background:rgba(255,255,255,0.08);transform:translateX(-100%);transition:transform 0.4s var(--ease);}
 .btn:hover::before{transform:translateX(0);}
@@ -87,168 +85,79 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
 .btn-p:hover{background:var(--teal2);transform:translateY(-2px);box-shadow:0 12px 36px rgba(0,184,156,0.3);}
 .btn-s{background:transparent;color:var(--pearl2);border:1px solid rgba(0,212,184,0.28);}
 .btn-s:hover{color:var(--white);border-color:var(--teal2);}
-.btn-g{background:transparent;color:var(--gold2);border:1px solid rgba(201,168,76,0.3);}
-.btn-g:hover{color:var(--white);border-color:var(--gold2);background:rgba(201,168,76,0.07);}
 
 /* ============================================================
-   HERO — SPLIT LAYOUT
+   HERO: repositioned per strategy review
    ============================================================ */
-.hero{
-  min-min-height:100vh;min-height:100dvh;
-  background:var(--slate);position:relative;
-  display:flex;flex-direction:column;
-}
-.hero-bg{position:absolute;inset:0;
-  background:
-    radial-gradient(ellipse 70% 55% at 75% 10%,rgba(0,212,184,0.08) 0%,transparent 55%),
-    radial-gradient(ellipse 45% 60% at 5% 85%,rgba(201,168,76,0.05) 0%,transparent 50%),
-    radial-gradient(ellipse 30% 35% at 90% 70%,rgba(0,184,156,0.04) 0%,transparent 45%);
-}
+.hero{min-height:100vh;min-height:100dvh;background:var(--slate);position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 75% 10%,rgba(0,212,184,0.08) 0%,transparent 55%),radial-gradient(ellipse 45% 60% at 5% 85%,rgba(201,168,76,0.05) 0%,transparent 50%);}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.015) 1px,transparent 1px);background-size:52px 52px;}
-.hero-grid::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 100% 75% at 50% 100%,rgba(10,14,20,0.96) 0%,transparent 70%);}
-.hero-vbar{position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(to bottom,var(--teal3),var(--teal),transparent);z-index:2;}
-.hero-orb{position:absolute;right:8%;top:12%;width:clamp(120px,28vw,440px);height:clamp(120px,28vw,440px);border-radius:50%;background:radial-gradient(circle,rgba(0,212,184,0.08) 0%,transparent 70%);border:1px solid rgba(0,212,184,0.07);animation:orbPulse 7s ease-in-out infinite;z-index:1;}
-.hero-orb::before{content:'';position:absolute;inset:16px;border-radius:50%;border:1px solid rgba(0,212,184,0.05);animation:orbPulse 7s 1s ease-in-out infinite reverse;}
-@keyframes orbPulse{0%,100%{transform:scale(1);opacity:0.9;}50%{transform:scale(1.05);opacity:0.6;}}
-.hero-wm{position:absolute;right:-5px;bottom:-15px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(6rem,22vw,24rem);line-height:0.82;letter-spacing:-0.05em;color:rgba(255,255,255,0.013);user-select:none;pointer-events:none;}
-
-/* HERO MAIN SPLIT */
-.hero-main{
-  position:relative;z-index:3;flex:1;
-  display:grid;
-  grid-template-columns:1fr clamp(260px,30vw,400px);
-  gap:clamp(24px,4vw,60px);
-  align-items:center;
-  padding:clamp(90px,14vh,120px) var(--sp) clamp(20px,4vh,40px);
-}
-@media(max-width:768px){.hero-main{grid-template-columns:1fr;}.hero-cta-box{display:none;}}
-
-.hero-left{}
-.hero-kicker{font-family:'DM Mono',monospace;font-size:clamp(0.46rem,1.2vw,0.58rem);letter-spacing:0.42em;text-transform:uppercase;color:var(--teal2);display:flex;align-items:center;gap:10px;margin-bottom:clamp(10px,1.8vh,16px);animation:fadeUp 0.8s 0.1s both;}
-.hero-kicker::before{content:'';width:20px;height:1px;background:var(--teal2);}
-@keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
-.hero-h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2.8rem,8.5vw,9.5rem);line-height:0.86;letter-spacing:0.01em;animation:fadeUp 1s 0.15s both;}
-.hero-h1 em{font-style:italic;color:var(--teal2);display:block;}
-.hero-hr{width:52px;height:2px;background:linear-gradient(90deg,var(--gold),var(--teal2));margin:clamp(12px,2.2vh,20px) 0;animation:fadeUp 0.8s 0.35s both;}
-.hero-desc{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.84rem,1.6vw,1.1rem);color:rgba(205,240,232,0.68);line-height:1.75;max-width:480px;animation:fadeUp 0.9s 0.45s both;}
-.hero-desc strong{color:var(--white);font-style:normal;}
-
-/* TRIGGER BLOCK */
-.hero-trigger{
-  margin-top:clamp(14px,2.5vh,22px);
-  padding:clamp(14px,2.5vh,20px) clamp(16px,2.8vw,24px);
-  background:rgba(0,184,156,0.05);
-  border-left:3px solid var(--teal2);
-  animation:fadeUp 0.9s 0.55s both;
-}
-.hero-trigger-label{font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.9vw,0.5rem);letter-spacing:0.3em;text-transform:uppercase;color:var(--teal2);margin-bottom:10px;}
-.hero-trigger-items{display:flex;flex-wrap:wrap;gap:6px;}
-.trigger-item{font-family:'DM Mono',monospace;font-size:clamp(0.4rem,0.95vw,0.52rem);letter-spacing:0.1em;text-transform:uppercase;color:rgba(205,240,232,0.6);padding:5px 12px;border:1px solid rgba(0,212,184,0.15);transition:all 0.25s;cursor:default;}
-.trigger-item:hover{border-color:var(--teal2);color:var(--teal2);background:rgba(0,184,156,0.06);}
-
-/* HERO CTA ROW */
-.hero-cta-row{display:flex;gap:clamp(10px,2vw,16px);flex-wrap:wrap;margin-top:clamp(16px,3vh,28px);animation:fadeUp 0.9s 0.65s both;}
-
-/* HERO RIGHT: CTA BOX */
-.hero-cta-box{
-  background:rgba(255,255,255,0.03);
-  border:1px solid rgba(0,212,184,0.16);
-  padding:clamp(24px,4vh,40px) clamp(20px,3.5vw,32px);
-  position:relative;animation:fadeUp 1s 0.7s both;
-  backdrop-filter:blur(12px);
-}
-.hero-cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--teal2),transparent);}
-.hcb-tag{font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.5rem);letter-spacing:0.3em;text-transform:uppercase;color:var(--teal2);margin-bottom:clamp(10px,1.8vh,16px);}
-.hcb-q{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(1.2rem,2.5vw,2rem);line-height:1.1;color:var(--white);margin-bottom:clamp(14px,2.5vh,22px);}
-.hcb-items{display:flex;flex-direction:column;gap:8px;margin-bottom:clamp(16px,3vh,26px);}
-.hcb-item{font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.5rem);letter-spacing:0.12em;text-transform:uppercase;color:rgba(205,240,232,0.55);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);display:flex;align-items:center;gap:10px;}
-.hcb-item::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0;}
-.hcb-div{height:1px;background:rgba(0,212,184,0.1);margin:clamp(10px,1.8vh,16px) 0;}
-.hcb-stat{text-align:center;margin-bottom:clamp(10px,1.8vh,16px);}
-.hcb-stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.4rem,2.8vw,2.2rem);color:var(--gold2);line-height:1;}
-.hcb-stat-lbl{font-family:'DM Mono',monospace;font-size:clamp(0.32rem,0.72vw,0.44rem);letter-spacing:0.16em;text-transform:uppercase;color:var(--pearl3);margin-top:3px;}
+.hero-wm{position:absolute;right:-5px;bottom:-15px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(6rem,22vw,20rem);line-height:0.82;letter-spacing:-0.05em;color:rgba(255,255,255,0.013);user-select:none;pointer-events:none;}
+.hero-inner{position:relative;z-index:3;padding:clamp(90px,14vh,120px) var(--sp) clamp(40px,7vh,64px);max-width:960px;}
+.hero-h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2.1rem,5.6vw,4.8rem);line-height:1.05;color:var(--white);margin-bottom:clamp(18px,3vh,28px);}
+.hero-h1 em{font-style:italic;color:var(--teal2);}
+.hero-desc{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.86rem,1.6vw,1.08rem);color:rgba(205,240,232,0.65);line-height:1.8;max-width:760px;margin-bottom:clamp(22px,4vh,34px);}
+.hero-proof{font-family:'DM Mono',monospace;font-size:clamp(0.4rem,0.95vw,0.52rem);letter-spacing:0.18em;text-transform:uppercase;color:var(--pearl3);margin-bottom:clamp(24px,4vh,36px);}
+.hero-cta-row{display:flex;gap:clamp(10px,2vw,16px);flex-wrap:wrap;}
 
 /* SCORE STRIP */
-.score-strip{display:grid;grid-template-columns:repeat(4,1fr);background:var(--slate2);border-top:1px solid rgba(0,212,184,0.12);position:relative;z-index:3;animation:fadeUp 0.8s 1.4s both;}
+.score-strip{display:grid;grid-template-columns:repeat(4,1fr);background:var(--slate2);border-top:1px solid rgba(0,212,184,0.12);position:relative;z-index:3;}
 @media(max-width:500px){.score-strip{grid-template-columns:repeat(2,1fr);}}
-.sc{padding:clamp(12px,2vh,22px) clamp(12px,2.2vw,28px);border-right:1px solid var(--bdark);position:relative;overflow:hidden;}
+.sc{padding:clamp(12px,2vh,22px) clamp(12px,2.2vw,28px);border-right:1px solid var(--bdark);}
 .sc:last-child{border-right:none;}
 @media(max-width:500px){.sc:nth-child(2){border-right:none;}.sc:nth-child(3){border-top:1px solid var(--bdark);}}
-.sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),var(--teal3));transform:scaleX(0);transform-origin:left;transition:transform 0.45s;}
-.sc:hover::after{transform:scaleX(1);}
-.sc-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.5rem,3.5vw,3.2rem);line-height:1;color:var(--white);}
+.sc-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.5rem,3.5vw,2.6rem);line-height:1;color:var(--white);}
 .sc-pre{font-size:0.38em;color:var(--gold2);}
 .sc-suf{font-size:0.34em;color:var(--teal2);}
 .sc-lbl{font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.85vw,0.48rem);letter-spacing:0.16em;text-transform:uppercase;color:var(--pearl3);margin-top:4px;line-height:1.5;}
 
 /* ============================================================
-   DIAGNOSIS SECTION (unique)
+   FOR BRANDS
    ============================================================ */
-.diagnosis{background:var(--ivory);padding:clamp(72px,11vh,100px) var(--sp) clamp(40px,7vh,72px);}
-.diag-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:start;margin-top:clamp(24px,4vh,44px);}
-@media(max-width:768px){.diag-grid{grid-template-columns:1fr;}}
-.diag-headline{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5.5vw,5.5rem);line-height:0.88;color:var(--ink);margin-bottom:clamp(14px,2.5vh,24px);}
-.diag-headline em{font-style:italic;color:var(--teal);display:block;}
-.diag-intro{font-family:'Libre Baskerville',serif;font-size:clamp(0.82rem,1.5vw,1rem);color:#333;line-height:1.85;margin-bottom:clamp(20px,3.5vh,32px);}
-.diag-items{display:flex;flex-direction:column;gap:clamp(6px,1.2vh,10px);}
-.diag-item{display:grid;grid-template-columns:clamp(40px,6vw,64px) 1fr;gap:clamp(10px,2vw,18px);align-items:start;padding:clamp(12px,2.2vh,20px);background:var(--ivory2);border-left:3px solid transparent;transition:border-color 0.25s,background 0.25s;}
-.diag-item:hover{border-left-color:var(--teal);background:var(--ivory3);}
-.diag-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3.5rem);line-height:0.9;color:rgba(0,184,156,0.15);}
-.diag-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.88rem,1.7vw,1.2rem);letter-spacing:0.06em;text-transform:uppercase;color:var(--ink);margin-bottom:4px;}
-.diag-text{font-family:'Libre Baskerville',serif;font-size:clamp(0.7rem,1.2vw,0.84rem);color:#555;line-height:1.68;}
-
-/* RIGHT PANEL */
-.diag-right{}
-.diag-statement{padding:clamp(20px,3.5vh,32px) clamp(18px,3vw,28px);background:var(--slate);border-left:4px solid var(--teal);margin-bottom:clamp(14px,2.5vh,22px);}
-.diag-statement p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.9vw,1.4rem);color:var(--pearl);line-height:1.6;}
-.diag-statement p strong{color:var(--teal2);font-style:normal;}
-.diag-who{display:flex;flex-direction:column;gap:5px;}
-.diag-who-row{font-family:'DM Mono',monospace;font-size:clamp(0.42rem,1vw,0.54rem);letter-spacing:0.18em;text-transform:uppercase;color:#444;display:flex;align-items:center;gap:10px;padding:clamp(8px,1.5vh,13px) clamp(12px,2.2vw,18px);background:var(--ivory2);border-left:2px solid var(--teal);transition:background 0.2s;}
-.diag-who-row:hover{background:var(--ivory3);}
-.diag-who-row::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0;}
+.brands-sec{background:var(--slate2);position:relative;overflow:hidden;}
+.brands-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,60px);align-items:start;margin-top:clamp(20px,3.5vh,30px);}
+@media(max-width:800px){.brands-grid{grid-template-columns:1fr;}}
+.brands-body{font-family:'Libre Baskerville',serif;font-size:clamp(0.78rem,1.3vw,0.92rem);color:rgba(205,240,232,0.55);line-height:1.85;margin-bottom:clamp(16px,3vh,24px);}
+.brands-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 16px;}
+@media(max-width:560px){.brands-list{grid-template-columns:1fr;}}
+.brands-list li{font-family:'DM Mono',monospace;font-size:clamp(0.42rem,0.92vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:var(--pearl2);padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.05);display:flex;align-items:center;gap:10px;}
+.brands-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;}
 
 /* ============================================================
-   DECISION LAYER (core offer — visual centrepiece)
+   WHO WE HELP
    ============================================================ */
-.decision{background:var(--slate);padding:clamp(72px,11vh,100px) var(--sp) clamp(40px,7vh,72px);position:relative;overflow:visible;}
-.decision-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(0,184,156,0.04) 0%,transparent 70%);}
-.decision-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.013) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.013) 1px,transparent 1px);background-size:60px 60px;}
-.decision-inner{position:relative;z-index:2;}
-.decision-header{display:grid;grid-template-columns:1fr auto;gap:clamp(20px,4vw,60px);align-items:end;margin-bottom:clamp(18px,3.2vh,32px);}
-@media(max-width:700px){.decision-header{grid-template-columns:1fr;}}
-.dec-headline{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5vw,5.5rem);line-height:0.88;color:var(--white);}
-.dec-headline em{font-style:italic;color:var(--teal2);}
-.dec-anchor{padding:clamp(14px,2.5vh,22px) clamp(16px,2.8vw,26px);background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.2);}
-.dec-anchor-label{font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.85vw,0.48rem);letter-spacing:0.22em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px;}
-.dec-anchor-text{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.9rem,1.8vw,1.3rem);letter-spacing:0.06em;color:var(--white);}
-.dec-anchor-sub{font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.8vw,0.46rem);letter-spacing:0.14em;text-transform:uppercase;color:var(--pearl3);margin-top:4px;}
+.wh-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2px;margin-top:clamp(20px,3.5vh,32px);}
+@media(max-width:520px){.wh-grid{grid-template-columns:1fr;}}
+.wh-card{padding:clamp(18px,3vh,28px) clamp(14px,2.2vw,22px);background:rgba(255,255,255,0.022);border:1px solid var(--bdark);border-top:2px solid var(--teal);transition:background .25s;}
+.wh-card:hover{background:rgba(0,184,156,0.05);}
+.wh-title{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(1.05rem,1.9vw,1.5rem);color:var(--white);margin-bottom:6px;}
+.wh-desc{font-family:'Libre Baskerville',serif;font-size:clamp(0.66rem,1.1vw,0.78rem);color:rgba(205,240,232,0.5);line-height:1.65;}
 
-/* COMPARE TABLE (scan path) */
-.dec-compare{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:clamp(16px,3vh,28px);border:1px solid var(--bdark);}
-@media(max-width:600px){.dec-compare{grid-template-columns:1fr;}}
-.dc-cell{padding:clamp(14px,2.5vh,22px) clamp(14px,2.5vw,22px);background:rgba(255,255,255,0.018);border-right:1px solid var(--bdark);transition:background 0.22s;}
-.dc-cell:last-child{border-right:none;}
-.dc-cell.featured{background:rgba(0,184,156,0.05);border-top:2px solid var(--teal2);}
-.dc-cell:hover{background:rgba(0,184,156,0.04);}
-.dc-label{font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.8vw,0.46rem);letter-spacing:0.26em;text-transform:uppercase;color:var(--pearl3);margin-bottom:6px;}
-.dc-label.feat-label{color:var(--teal2);}
-.dc-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1rem,2.2vw,1.8rem);letter-spacing:0.04em;text-transform:uppercase;color:var(--white);margin-bottom:4px;}
-.dc-what{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.68rem,1.2vw,0.84rem);color:rgba(205,240,232,0.45);margin-bottom:8px;}
-.dc-price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.8rem,1.5vw,1.1rem);letter-spacing:0.06em;color:var(--gold2);}
+/* ============================================================
+   CAPABILITIES
+   ============================================================ */
+.cap-sec{background:var(--slate2);}
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:clamp(20px,3.5vh,32px);}
+@media(max-width:768px){.cap-grid{grid-template-columns:1fr;}}
+.cap{padding:clamp(16px,2.8vh,24px) clamp(14px,2.2vw,20px);background:rgba(255,255,255,0.022);border:1px solid var(--bdark);display:flex;align-items:center;gap:12px;}
+.cap-num{font-family:'DM Mono',monospace;font-size:0.5rem;color:var(--teal2);letter-spacing:0.1em;flex-shrink:0;}
+.cap-name{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:clamp(0.82rem,1.5vw,1rem);letter-spacing:0.02em;color:var(--ivory2);}
 
-/* SERVICE CARDS */
-.svc-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+/* ============================================================
+   DECISION / ENGAGEMENT OPTIONS
+   ============================================================ */
+.decision{background:var(--slate);position:relative;overflow:visible;}
+.svc-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:clamp(20px,3.5vh,32px);}
 @media(max-width:768px){.svc-cards{grid-template-columns:1fr;}}
-.svc{padding:clamp(22px,4vh,40px) clamp(18px,3vw,32px);background:rgba(255,255,255,0.022);border:1px solid var(--bdark);border-top:3px solid transparent;position:relative;overflow:hidden;transition:background 0.28s,border-top-color 0.28s;}
+.svc{padding:clamp(22px,4vh,40px) clamp(18px,3vw,32px);background:rgba(255,255,255,0.022);border:1px solid var(--bdark);border-top:3px solid transparent;position:relative;overflow:hidden;transition:background 0.28s,border-top-color 0.28s;display:flex;flex-direction:column;}
 .svc:hover{background:rgba(0,184,156,0.04);border-top-color:var(--teal);}
 .svc.svc-featured{background:rgba(0,184,156,0.04);border-top-color:var(--teal2);border-color:rgba(0,212,184,0.18);}
+.svc.svc-premium{background:rgba(201,168,76,0.045);border-top-color:var(--gold);border-color:rgba(201,168,76,0.18);}
 .svc-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3.5rem,7vw,7rem);line-height:0.85;color:rgba(255,255,255,0.03);letter-spacing:-0.02em;margin-bottom:4px;}
 .svc-tag{font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.82vw,0.48rem);letter-spacing:0.26em;text-transform:uppercase;color:var(--teal2);margin-bottom:8px;}
 .svc-tag.gold-tag{color:var(--gold2);}
 .svc-title{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(1.3rem,2.6vw,2.2rem);line-height:1.1;color:var(--white);margin-bottom:clamp(8px,1.5vh,14px);}
-.svc-price{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1rem,2vw,1.6rem);color:var(--gold2);letter-spacing:0.06em;margin-bottom:clamp(10px,1.8vh,16px);}
-.svc-price span{font-size:0.6em;color:var(--pearl3);font-weight:400;}
-.svc-scope{font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.82vw,0.48rem);letter-spacing:0.14em;text-transform:uppercase;color:var(--teal2);padding:5px 10px;border:1px solid rgba(0,212,184,0.2);display:inline-block;margin-bottom:clamp(10px,1.8vh,16px);}
+.svc-scope{font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.82vw,0.48rem);letter-spacing:0.14em;text-transform:uppercase;color:var(--teal2);padding:5px 10px;border:1px solid rgba(0,212,184,0.2);display:inline-block;margin-bottom:clamp(10px,1.8vh,16px);width:fit-content;}
 .svc-desc{font-family:'Libre Baskerville',serif;font-size:clamp(0.68rem,1.2vw,0.84rem);color:rgba(205,240,232,0.5);line-height:1.75;margin-bottom:clamp(12px,2.2vh,20px);}
 .svc-list{list-style:none;margin-bottom:clamp(14px,2.5vh,22px);}
 .svc-list li{font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.5rem);letter-spacing:0.12em;text-transform:uppercase;color:var(--pearl2);padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;align-items:center;gap:8px;}
@@ -257,1329 +166,506 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
 .svc-roi{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.68rem,1.1vw,0.82rem);color:var(--gold2);margin-bottom:clamp(14px,2.5vh,22px);padding:clamp(8px,1.5vh,12px) clamp(10px,1.8vw,16px);background:rgba(201,168,76,0.06);border-left:2px solid var(--gold);}
 .svc-bestfor{font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.78vw,0.46rem);letter-spacing:0.12em;text-transform:uppercase;color:rgba(205,240,232,0.35);margin-bottom:clamp(12px,2.2vh,18px);}
 
-/* ============================================================
-   PROCESS SECTION
-   ============================================================ */
-.process{background:var(--slate2);padding:clamp(72px,11vh,100px) var(--sp) clamp(40px,7vh,72px);}
-.proc-header{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:end;margin-bottom:clamp(28px,5vh,52px);}
-@media(max-width:700px){.proc-header{grid-template-columns:1fr;}}
-.proc-headline{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5vw,5.5rem);line-height:0.88;color:var(--white);}
-.proc-headline em{font-style:italic;color:var(--teal2);}
-.proc-price-block{padding:clamp(20px,3.5vh,32px) clamp(18px,3vw,28px);background:rgba(255,255,255,0.025);border:1px solid rgba(0,212,184,0.18);}
-.proc-price{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,4.5vw,4rem);color:var(--teal2);line-height:1;margin-bottom:4px;}
-.proc-price-label{font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.85vw,0.48rem);letter-spacing:0.2em;text-transform:uppercase;color:var(--pearl3);margin-bottom:10px;}
-.proc-price-roi{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.7rem,1.2vw,0.86rem);color:var(--gold2);line-height:1.6;}
-.proc-sprint{display:flex;gap:clamp(6px,1.2vw,10px);margin-bottom:clamp(20px,3.5vh,36px);}
-.sprint-tag{font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.88vw,0.5rem);letter-spacing:0.18em;text-transform:uppercase;color:var(--teal2);padding:7px 14px;border:1px solid rgba(0,212,184,0.22);display:flex;align-items:center;gap:6px;}
-.sprint-tag:not(:last-child)::after{content:'';width:14px;height:1px;background:rgba(0,212,184,0.3);margin-left:6px;}
-.proc-phases{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
-@media(max-width:600px){.proc-phases{grid-template-columns:1fr;}}
-.phase{padding:clamp(20px,3.5vh,36px) clamp(18px,2.8vw,28px);background:rgba(255,255,255,0.02);border-top:3px solid var(--bteal);position:relative;transition:background 0.25s,border-top-color 0.28s;}
-.phase:hover{background:rgba(0,184,156,0.04);border-top-color:var(--teal2);}
-.phase-wk{font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.8vw,0.46rem);letter-spacing:0.24em;text-transform:uppercase;color:var(--teal);margin-bottom:7px;}
-.phase-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3rem,6vw,6rem);line-height:0.85;color:rgba(255,255,255,0.03);letter-spacing:-0.02em;margin-bottom:4px;}
-.phase-title{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(1.1rem,2vw,1.7rem);line-height:1.15;color:var(--white);margin-bottom:clamp(10px,1.8vh,16px);}
-.phase-items{list-style:none;}
-.phase-items li{font-family:'Libre Baskerville',serif;font-size:clamp(0.64rem,1.1vw,0.8rem);color:rgba(205,240,232,0.55);padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;align-items:flex-start;gap:8px;line-height:1.6;}
-.phase-items li:last-child{border-bottom:none;}
-.phase-items li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0;margin-top:5px;}
-.phase-outcome{margin-top:clamp(12px,2.2vh,20px);padding:clamp(10px,1.8vh,16px) clamp(12px,2vw,18px);background:rgba(0,0,0,0.15);border-left:3px solid var(--teal);}
-.phase-outcome-lbl{font-family:'DM Mono',monospace;font-size:clamp(0.32rem,0.74vw,0.44rem);letter-spacing:0.22em;text-transform:uppercase;color:var(--teal);margin-bottom:4px;}
-.phase-outcome-text{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.64rem,1.1vw,0.8rem);color:var(--pearl);line-height:1.6;}
+.svc-fee-block{margin-top:auto;}
+.fee-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;background:transparent;border:1px solid rgba(0,212,184,0.28);color:var(--teal2);font-family:'DM Mono',monospace;font-weight:500;font-size:clamp(0.4rem,0.9vw,0.5rem);letter-spacing:0.22em;text-transform:uppercase;padding:clamp(11px,1.9vh,14px) clamp(14px,2.4vw,18px);cursor:pointer;transition:all 0.25s var(--ease);}
+.fee-toggle:hover{background:rgba(0,184,156,0.08);border-color:var(--teal2);}
+.fee-toggle[aria-expanded="true"]{background:rgba(0,184,156,0.08);}
+.fee-toggle .fee-plus{font-size:1.1em;line-height:1;transition:transform 0.3s var(--ease);flex-shrink:0;}
+.fee-toggle[aria-expanded="true"] .fee-plus{transform:rotate(45deg);}
+.fee-panel{max-height:0;overflow:hidden;border:1px solid rgba(0,212,184,0.28);border-top:none;background:rgba(255,255,255,0.03);transition:max-height 0.4s var(--ease);}
+.fee-panel.open{max-height:160px;}
+.fee-panel-inner{padding:clamp(14px,2.4vh,18px);}
+.fee-amount{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.3rem,2.4vw,1.7rem);color:var(--gold2);letter-spacing:0.02em;}
+.fee-amount span{font-size:0.55em;color:var(--pearl3);font-weight:400;letter-spacing:0.08em;text-transform:uppercase;margin-left:6px;}
+.fee-note{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.62rem,1.05vw,0.74rem);color:rgba(205,240,232,0.5);margin-top:6px;line-height:1.6;}
+.eng-note{margin-top:clamp(20px,3.5vh,32px);font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.82vw,0.48rem);letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.28);text-align:center;}
 
 /* ============================================================
-   CASE RESULTS
+   SOCIAL PROOF
    ============================================================ */
-.cases{background:var(--ivory);padding:clamp(72px,11vh,100px) var(--sp) clamp(40px,7vh,72px);}
-.cases-headline{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5vw,5rem);line-height:0.9;color:var(--ink);margin-bottom:clamp(16px,3vh,32px);}
-.cases-headline em{font-style:italic;color:var(--teal);}
-.cases-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:clamp(20px,3.5vh,36px);background:var(--ivory3);}
-@media(max-width:600px){.cases-mini{grid-template-columns:1fr;}}
-.cm-cell{padding:clamp(14px,2.5vh,22px) clamp(14px,2.5vw,22px);background:var(--ivory2);}
-.cm-label{font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.78vw,0.46rem);letter-spacing:0.22em;text-transform:uppercase;color:var(--teal);margin-bottom:7px;}
-.cm-result{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.88rem,1.7vw,1.2rem);letter-spacing:0.04em;text-transform:uppercase;color:var(--ink);line-height:1.2;}
-.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(8px,1.5vw,14px);}
-@media(max-width:768px){.cases-grid{grid-template-columns:1fr;}}
-.case-card{background:var(--ivory3);padding:clamp(20px,3.5vh,32px) clamp(18px,2.8vw,26px);border-top:3px solid var(--teal);position:relative;transition:background 0.22s;}
-.case-card:hover{background:var(--ivory2);}
-.case-label{font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.78vw,0.46rem);letter-spacing:0.24em;text-transform:uppercase;color:var(--teal);margin-bottom:7px;}
-.case-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.9rem,1.7vw,1.2rem);letter-spacing:0.05em;text-transform:uppercase;color:var(--ink);margin-bottom:clamp(8px,1.5vh,14px);}
-.case-situation{font-family:'Libre Baskerville',serif;font-size:clamp(0.68rem,1.2vw,0.82rem);color:#555;line-height:1.72;margin-bottom:clamp(10px,1.8vh,16px);}
-.case-actions{list-style:none;margin-bottom:clamp(10px,1.8vh,16px);}
-.case-actions li{font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.8vw,0.48rem);letter-spacing:0.1em;text-transform:uppercase;color:#444;padding:5px 0;border-bottom:1px solid var(--ivory3);display:flex;align-items:center;gap:7px;}
-.case-actions li:last-child{border-bottom:none;}
-.case-actions li::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--teal);flex-shrink:0;}
-.case-result{padding:clamp(10px,1.8vh,16px) clamp(12px,2vw,18px);background:var(--slate);border-left:3px solid var(--teal2);}
-.case-result-lbl{font-family:'DM Mono',monospace;font-size:clamp(0.32rem,0.72vw,0.44rem);letter-spacing:0.22em;text-transform:uppercase;color:var(--teal2);margin-bottom:4px;}
-.case-result-text{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.68rem,1.1vw,0.82rem);color:var(--pearl);line-height:1.6;}
+.proof-sec{background:var(--slate2);}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:clamp(20px,3.5vh,32px);}
+@media(max-width:768px){.proof-grid{grid-template-columns:1fr;}}
+.proof-card{padding:clamp(18px,3vh,26px) clamp(14px,2.2vw,20px);background:rgba(255,255,255,0.022);border:1px solid var(--bdark);border-top:2px solid var(--gold);}
+.proof-label{font-family:'DM Mono',monospace;font-size:0.44rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px;}
+.proof-text{font-family:'Libre Baskerville',serif;font-size:clamp(0.7rem,1.2vw,0.85rem);color:var(--ivory2);line-height:1.6;}
+.proof-open{border-top-color:rgba(255,255,255,0.15);}
+.proof-open .proof-text{color:rgba(205,240,232,0.4);font-style:italic;}
 
 /* ============================================================
-   NOT THIS / OBJECTIONS
+   CTA / FOOTER
    ============================================================ */
-.objections{background:var(--slate3);padding:clamp(72px,11vh,100px) var(--sp) clamp(40px,7vh,72px);}
-.obj-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:start;margin-top:clamp(24px,4vh,44px);}
-@media(max-width:700px){.obj-grid{grid-template-columns:1fr;}}
-.obj-not{display:flex;flex-direction:column;gap:clamp(8px,1.4vh,12px);}
-.obj-not-item{display:flex;gap:16px;align-items:flex-start;padding:clamp(14px,2.5vh,22px) clamp(14px,2.5vw,22px);background:rgba(255,255,255,0.02);border:1px solid var(--bdark);transition:background 0.22s;}
-.obj-not-item:hover{background:rgba(255,255,255,0.04);}
-.obj-not-x{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1rem,2vw,1.5rem);color:rgba(232,93,93,0.3);flex-shrink:0;line-height:1;}
-.obj-not-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.82rem,1.6vw,1.1rem);letter-spacing:0.07em;text-transform:uppercase;color:var(--white);margin-bottom:4px;}
-.obj-not-text{font-family:'Libre Baskerville',serif;font-size:clamp(0.66rem,1.1vw,0.8rem);color:rgba(205,240,232,0.45);line-height:1.68;}
-.obj-is{display:flex;flex-direction:column;gap:clamp(8px,1.4vh,12px);}
-.obj-is-item{display:flex;gap:16px;align-items:flex-start;padding:clamp(14px,2.5vh,22px) clamp(14px,2.5vw,22px);background:rgba(0,184,156,0.04);border:1px solid rgba(0,212,184,0.12);transition:background 0.22s;}
-.obj-is-item:hover{background:rgba(0,184,156,0.07);}
-.obj-is-check{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1rem,2vw,1.5rem);color:var(--teal2);flex-shrink:0;line-height:1;}
-.obj-is-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.82rem,1.6vw,1.1rem);letter-spacing:0.07em;text-transform:uppercase;color:var(--white);margin-bottom:4px;}
-.obj-is-text{font-family:'Libre Baskerville',serif;font-size:clamp(0.66rem,1.1vw,0.8rem);color:rgba(205,240,232,0.55);line-height:1.68;}
-
-/* ============================================================
-   PROOF SECTION
-   ============================================================ */
-.proof{background:var(--slate);padding:clamp(72px,11vh,100px) var(--sp) clamp(40px,7vh,72px);position:relative;overflow:visible;}
-.proof-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 80% 30%,rgba(0,184,156,0.05) 0%,transparent 60%);}
-.proof-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);}
-@media(max-width:700px){.proof-inner{grid-template-columns:1fr;}}
-.proof-stats{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:clamp(16px,3vh,28px);}
-.pstat{padding:clamp(14px,2.5vh,24px) clamp(14px,2.2vw,22px);background:rgba(255,255,255,0.025);border-top:2px solid var(--bteal);transition:border-top-color 0.25s;}
-.pstat:hover{border-top-color:var(--teal2);}
-.pstat-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3.5vw,3.2rem);line-height:1;color:var(--white);}
-.pstat-pre{font-size:0.4em;color:var(--gold2);}
-.pstat-suf{font-size:0.34em;color:var(--teal2);}
-.pstat-lbl{font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.78vw,0.46rem);letter-spacing:0.14em;text-transform:uppercase;color:var(--pearl3);margin-top:4px;line-height:1.5;}
-.proof-quote{padding:clamp(18px,3vh,28px) clamp(16px,2.8vw,26px);background:rgba(255,255,255,0.02);border-left:3px solid var(--gold);margin-bottom:clamp(12px,2vh,20px);}
-.proof-quote p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.9vw,1.4rem);color:var(--pearl);line-height:1.62;}
-.proof-attr{font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.78vw,0.46rem);letter-spacing:0.16em;text-transform:uppercase;color:var(--pearl3);margin-top:8px;}
-.proof-props{display:flex;flex-wrap:wrap;gap:6px;}
-.proof-prop{font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.8vw,0.46rem);letter-spacing:0.1em;text-transform:uppercase;color:var(--pearl3);border:1px solid rgba(0,184,156,0.14);padding:5px 12px;transition:all 0.2s;}
-.proof-prop:hover{border-color:var(--teal2);color:var(--teal2);}
-.proof-rec-block{display:flex;flex-direction:column;gap:clamp(8px,1.4vh,12px);}
-.prec{padding:clamp(13px,2.2vh,20px) clamp(14px,2.3vw,22px);background:rgba(255,255,255,0.02);display:flex;gap:14px;align-items:flex-start;border:1px solid var(--bdark);transition:background 0.22s;}
-.prec:hover{background:rgba(255,255,255,0.04);}
-.prec-icon{font-size:clamp(1rem,2vw,1.4rem);flex-shrink:0;}
-.prec-label{font-family:'DM Mono',monospace;font-size:clamp(0.32rem,0.72vw,0.44rem);letter-spacing:0.2em;text-transform:uppercase;color:var(--pearl3);margin-bottom:4px;}
-.prec-text{font-family:'Libre Baskerville',serif;font-size:clamp(0.68rem,1.1vw,0.82rem);color:var(--pearl);line-height:1.6;}
-
-/* ============================================================
-   CONSTRAINTS (scarcity)
-   ============================================================ */
-.constraints{background:var(--slate2);padding:clamp(56px,9vh,88px) var(--sp);}
-.con-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center;}
-@media(max-width:700px){.con-inner{grid-template-columns:1fr;}}
-.con-hed{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5vw,5rem);line-height:0.9;color:var(--white);}
-.con-hed em{font-style:italic;color:var(--teal2);}
-.con-body{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.8rem,1.5vw,1rem);color:rgba(205,240,232,0.5);line-height:1.85;margin-top:clamp(12px,2.2vh,20px);}
-.con-cards{display:flex;flex-direction:column;gap:clamp(8px,1.4vh,12px);}
-.con-card{padding:clamp(14px,2.5vh,22px) clamp(16px,2.8vw,26px);background:rgba(255,255,255,0.025);border:1px solid var(--bdark);display:flex;gap:16px;align-items:flex-start;transition:border-color 0.22s;}
-.con-card:hover{border-color:rgba(0,212,184,0.2);}
-.con-card-accent{width:3px;flex-shrink:0;border-radius:2px;align-self:stretch;}
-.con-card-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.85rem,1.7vw,1.2rem);letter-spacing:0.07em;text-transform:uppercase;color:var(--white);margin-bottom:5px;}
-.con-card-text{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.66rem,1.1vw,0.8rem);color:rgba(205,240,232,0.48);line-height:1.65;}
-
-/* ============================================================
-   FINAL CTA
-   ============================================================ */
-.final{background:var(--slate);padding:clamp(80px,13vh,120px) var(--sp);position:relative;overflow:hidden;text-align:center;}
-.final-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(0,184,156,0.07) 0%,transparent 65%),radial-gradient(ellipse 40% 30% at 15% 80%,rgba(201,168,76,0.04) 0%,transparent 55%);}
-.final-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.012) 1px,transparent 1px);background-size:72px 72px;}
-.final-inner{position:relative;z-index:2;max-width:800px;margin:0 auto;}
-.final-kicker{font-family:'DM Mono',monospace;font-size:clamp(0.42rem,1.1vw,0.54rem);letter-spacing:0.42em;text-transform:uppercase;color:var(--teal2);margin-bottom:clamp(12px,2.2vh,20px);display:flex;align-items:center;justify-content:center;gap:12px;}
-.final-kicker::before,.final-kicker::after{content:'';width:36px;height:1px;background:rgba(0,212,184,0.32);}
-.final-h2{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2.5rem,8vw,8rem);line-height:0.88;color:var(--white);margin-bottom:clamp(12px,2.2vh,20px);}
-.final-h2 em{font-style:italic;color:var(--teal2);display:block;}
-.final-rule{width:56px;height:2px;background:linear-gradient(90deg,var(--gold),var(--teal2));margin:0 auto clamp(14px,2.5vh,24px);}
-.final-body{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.84rem,1.7vw,1.05rem);color:rgba(205,240,232,0.6);line-height:1.85;margin-bottom:clamp(20px,3.5vh,36px);}
-.final-qualifier{max-width:540px;margin:0 auto clamp(24px,4vh,40px);padding:clamp(16px,3vh,24px) clamp(18px,3.5vw,28px);background:rgba(255,255,255,0.03);border:1px solid rgba(0,212,184,0.12);}
-.fq-label{font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.9vw,0.5rem);letter-spacing:0.3em;text-transform:uppercase;color:var(--teal2);margin-bottom:clamp(10px,1.8vh,16px);}
-.fq-links{display:flex;flex-direction:column;gap:6px;}
-.fq-link{font-family:'Libre Baskerville',serif;font-size:clamp(0.72rem,1.3vw,0.88rem);color:rgba(205,240,232,0.6);text-decoration:none;display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05);transition:color 0.2s;}
-.fq-link:last-child{border-bottom:none;}
-.fq-link:hover{color:var(--teal2);}
-.fq-arrow{color:var(--teal2);font-weight:700;flex-shrink:0;}
-.final-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:clamp(16px,3vh,28px);}
-.final-contact{font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.85vw,0.48rem);letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.22);line-height:2.1;}
-.final-contact a{color:var(--pearl3);text-decoration:none;transition:color 0.2s;}
-.final-contact a:hover{color:var(--teal2);}
-
-/* FOOTER */
+.cta-sec{background:var(--slate);text-align:center;}
+.cta-headline{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5vw,4.4rem);line-height:1.05;color:var(--white);margin-bottom:clamp(16px,3vh,24px);}
+.cta-headline em{font-style:italic;color:var(--teal2);}
+.cta-body{font-family:'Libre Baskerville',serif;font-size:clamp(0.8rem,1.4vw,0.98rem);color:rgba(205,240,232,0.6);max-width:640px;margin:0 auto clamp(24px,4vh,36px);line-height:1.8;}
+.cta-btns{display:flex;gap:clamp(12px,2.5vw,20px);justify-content:center;flex-wrap:wrap;}
 footer{background:var(--slate2);padding:clamp(20px,3.5vh,32px) var(--sp);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;border-top:1px solid var(--bdark);}
-.foot-logo{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(0.9rem,2vw,1rem);letter-spacing:0.12em;color:var(--pearl3);}
-.foot-logo span{color:var(--teal2);}
-.foot-links{display:flex;gap:clamp(14px,3vw,28px);}
-.foot-link{font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.85vw,0.48rem);letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);text-decoration:none;transition:color 0.2s;}
-.foot-link:hover{color:var(--teal2);}
-.foot-note{font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.78vw,0.44rem);letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.16);}
-
-/* RESPONSIVE */
-
-/* ============================================================
-   MOBILE-FIRST RESPONSIVE — complete fix
-   ============================================================ */
-
-/* All grids collapse to single column on mobile */
-@media(max-width:768px){
-  /* Navigation */
-  .jump-nav-inner{gap:0;}
-  .jn-link{font-size:clamp(0.36rem,2.5vw,0.5rem);padding:clamp(8px,1.5vh,12px) clamp(8px,2vw,14px);}
-
-  /* Hero */
-  .hero-main{grid-template-columns:1fr;padding:clamp(80px,12vh,100px) var(--sp) clamp(16px,3vh,24px);}
-  .hero-cta-box{display:none;}
-  .hero-h1{font-size:clamp(2.4rem,10vw,4.5rem);}
-  .hero-trigger-items{flex-direction:column;gap:5px;}
-  .trigger-item{font-size:clamp(0.44rem,2.8vw,0.58rem);}
-  .score-strip{grid-template-columns:repeat(2,1fr);}
-  .sc:nth-child(2){border-right:none;}
-  .sc:nth-child(3){border-top:1px solid var(--bdark);}
-
-  /* Diagnosis */
-  .diag-grid{grid-template-columns:1fr;gap:clamp(20px,4vh,32px);}
-
-  /* Decision / Services */
-  .decision-header{grid-template-columns:1fr;gap:clamp(14px,3vh,22px);}
-  .dec-compare{grid-template-columns:1fr!important;}
-  .svc-cards{grid-template-columns:1fr;}
-
-  /* Process */
-  .proc-header{grid-template-columns:1fr;gap:clamp(14px,3vh,22px);}
-  .proc-phases{grid-template-columns:1fr;}
-  .proc-sprint{flex-wrap:wrap;}
-
-  /* Cases */
-  .cases-mini{grid-template-columns:1fr;}
-  .cases-grid{grid-template-columns:1fr;}
-
-  /* Objections */
-  .obj-grid{grid-template-columns:1fr;}
-
-  /* Not for everyone */
-  #not-for > div{grid-template-columns:1fr!important;}
-
-  /* Why section */
-  #why > div{grid-template-columns:1fr!important;}
-
-  /* Proof */
-  .proof-inner{grid-template-columns:1fr;}
-  .proof-stats{grid-template-columns:1fr 1fr;}
-
-  /* Constraints */
-  .con-inner{grid-template-columns:1fr;}
-
-  /* Principles */
-  .prin-grid{grid-template-columns:1fr 1fr;}
-
-  /* Final CTA */
-  .final-btns{flex-direction:column;align-items:center;}
-  .final-qualifier{padding:clamp(14px,2.5vh,20px);}
-  .fq-links{gap:4px;}
-
-  /* Footer */
-  footer{flex-direction:column;gap:10px;text-align:center;}
-  .foot-links{flex-wrap:wrap;justify-content:center;gap:12px;}
-
-  /* Remove overflow hidden that clips mobile content */
-  .hero,.decision,.process,.cases,.objections,.proof,.constraints,.final,.diagnosis{overflow:visible!important;}
-
-  /* Add bottom padding for mobile nav clearance */
-  section{padding-bottom:clamp(60px,10vh,80px)!important;}
-  footer{padding-bottom:clamp(70px,11vh,90px)!important;}
-}
-
-@media(max-width:480px){
-  :root{--sp:clamp(1rem,4vw,1.8rem);}
-  .prin-grid{grid-template-columns:1fr;}
-  .proof-stats{grid-template-columns:1fr;}
-  .rec-grid{grid-template-columns:1fr 1fr;}
-}
-
-
-/* ================================================================
-   MOBILE BOTTOM NAV
-   ================================================================ */
-.mob-nav{
-  display:none;
-  position:fixed;bottom:0;left:0;right:0;z-index:900;
-  background:rgba(10,14,20,0.95);
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  border-top:1px solid rgba(0,212,184,0.12);
-  padding:clamp(6px,1.2vh,10px) clamp(8px,3vw,16px);
-  align-items:center;justify-content:space-around;gap:4px;
-}
-@media(max-width:768px),(pointer:coarse){.mob-nav{display:flex;}}
-.mob-btn{
-  display:flex;flex-direction:column;align-items:center;gap:3px;
-  background:none;border:none;cursor:pointer;
-  padding:5px 8px;color:rgba(255,255,255,0.38);
-  font-family:'DM Mono',monospace;font-size:clamp(0.32rem,1.5vw,0.42rem);
-  letter-spacing:0.14em;text-transform:uppercase;
-  flex:1;text-decoration:none;transition:color 0.2s;
-}
-.mob-btn.active,.mob-btn:hover{color:var(--teal2);}
-.mob-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
-
-/* ================================================================
-   MOBILE: natural scroll, full padding
-   ================================================================ */
-@media(max-width:768px),(pointer:coarse){
-  /* All sections scroll naturally */
-  section,.section{
-    height:auto!important;min-height:auto!important;
-    overflow:visible!important;
-    padding-top:clamp(70px,10vh,86px)!important;
-    padding-bottom:clamp(70px,10vh,86px)!important;
-  }
-  /* Remove all inner height constraints */
-  .hero,.diagnosis,.decision,.process,.cases,.objections,.proof,
-  .constraints,.final,[id^="s-"],[id^="not-"],[id^="why"]{
-    height:auto!important;min-height:auto!important;overflow:visible!important;
-  }
-  /* Grids collapse to single column */
-  .diag-grid,.decision-header,.proc-header,.proof-inner,.con-inner,
-  .obj-grid,.hero-main{
-    grid-template-columns:1fr!important;gap:clamp(16px,3vh,24px)!important;
-  }
-  .dec-compare,.svc-cards,.proc-phases,.cases-mini,.cases-grid{
-    grid-template-columns:1fr!important;gap:clamp(8px,1.5vh,12px)!important;
-  }
-  /* Jump nav scrollable */
-  .jump-nav{top:clamp(44px,8vh,58px);}
-  .jump-nav-inner{overflow-x:auto;-webkit-overflow-scrolling:touch;}
-  /* Hero orb hide on mobile */
-  .hero-orb{display:none;}
-  /* Score strip 2 col on mobile */
-  .score-strip{grid-template-columns:repeat(2,1fr)!important;}
-  /* Property strip wrap */
-  .property-strip div{flex-wrap:wrap!important;}
-  /* Not-for section */
-  [id="not-for"] > div{grid-template-columns:1fr!important;}
-  /* Why section */
-  [id="why"] > div{grid-template-columns:1fr!important;}
-  /* Service cards */
-  .svc-cards{grid-template-columns:1fr!important;}
-  /* Footer */
-  footer{flex-direction:column!important;text-align:center!important;gap:10px!important;}
-}
-@media(max-width:480px){
-  .score-strip{grid-template-columns:1fr 1fr!important;}
-  .hero-h1{font-size:clamp(2.2rem,9vw,4rem)!important;}
-}
-
-/* ============================================================
-   FEE TOGGLE BUTTON
-   ============================================================ */
-.fee-toggle{
-  display:inline-flex;align-items:center;gap:8px;
-  background:none;border:1px solid rgba(201,168,76,0.3);
-  font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.92vw,0.52rem);
-  letter-spacing:0.22em;text-transform:uppercase;
-  color:var(--gold2);
-  padding:clamp(7px,1.3vh,10px) clamp(12px,2.2vw,18px);
-  cursor:pointer;transition:all 0.25s;
-  margin-bottom:clamp(10px,1.8vh,14px);
-  width:100%;justify-content:space-between;
-}
-.fee-toggle:hover{background:rgba(201,168,76,0.06);border-color:var(--gold2);}
-.fee-toggle .toggle-icon{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:18px;height:18px;border-radius:50%;
-  background:rgba(201,168,76,0.15);
-  font-size:0.9em;transition:transform 0.3s var(--ease);
-  flex-shrink:0;
-}
-.fee-toggle.open .toggle-icon{transform:rotate(45deg);}
-.fee-toggle.open{background:rgba(201,168,76,0.08);border-color:var(--gold2);}
-.fee-panel{
-  overflow:hidden;
-  max-height:0;
-  transition:max-height 0.45s var(--ease),opacity 0.35s ease;
-  opacity:0;
-}
-.fee-panel.open{
-  max-height:200px;
-  opacity:1;
-}
-.fee-revealed{
-  padding:clamp(12px,2.2vh,18px) clamp(14px,2.5vw,22px);
-  background:rgba(201,168,76,0.06);
-  border:1px solid rgba(201,168,76,0.2);
-  border-top:none;
-  margin-bottom:clamp(10px,1.8vh,14px);
-}
-.fee-revealed-num{
-  font-family:'Barlow Condensed',sans-serif;font-weight:900;
-  font-size:clamp(1.4rem,3vw,2.2rem);color:var(--gold2);
-  line-height:1;margin-bottom:4px;
-}
-.fee-revealed-label{
-  font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.78vw,0.46rem);
-  letter-spacing:0.18em;text-transform:uppercase;color:var(--pearl3);
-  margin-bottom:8px;
-}
-.fee-revealed-note{
-  font-family:'Libre Baskerville',serif;font-style:italic;
-  font-size:clamp(0.66rem,1.1vw,0.8rem);color:rgba(205,240,232,0.5);
-  line-height:1.65;
-}
-
+.footer-logo{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(0.9rem,2vw,1rem);letter-spacing:0.12em;color:var(--pearl3);}
+.footer-logo span{color:var(--teal2);}
+.footer-nav{display:flex;gap:clamp(14px,3vw,28px);flex-wrap:wrap;}
+.footer-link{font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.9vw,0.5rem);letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.3);text-decoration:none;}
+.footer-link.current{color:var(--teal2);}
+.footer-tag{font-family:'DM Mono',monospace;font-size:clamp(0.36rem,0.8vw,0.46rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.18);}
 </style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Kimberly-Ann Athayde Sports Consulting",
-  "description": "Sports consulting specialising in sponsorship delivery, event operations, sports infrastructure planning, sports business start-ups and youth athlete management.",
-  "url": "https://dido266.github.io/Kimberly/consulting.html",
-  "image": "https://dido266.github.io/Kimberly/thumbnail.jpg",
-  "founder": {
-    "@type": "Person",
-    "name": "Kimberly-Ann Athayde",
-    "jobTitle": "Sports Business Consultant",
-    "knowsAbout": ["Sports Consulting", "Sponsorship Management", "Event Operations", "Sports Infrastructure", "Youth Athlete Management", "League Operations"]
-  },
-  "areaServed": "Worldwide",
-  "serviceType": ["Sponsorship Consulting", "Event Operations Consulting", "Sports Infrastructure Advisory", "Sports Start-up Planning", "Youth Athlete Management"],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "kimberly.athayde@gmail.com",
-    "contactType": "Business Enquiries"
-  }
-}
-
-/* Fee toggle */
-function toggleFee(btn) {
-  var panel = btn.nextElementSibling;
-  var isOpen = panel.classList.contains('open');
-  // Close all other panels first
-  document.querySelectorAll('.fee-panel.open').forEach(function(p) {
-    p.classList.remove('open');
-    var b = p.previousElementSibling;
-    if (b && b.classList.contains('fee-toggle')) {
-      b.classList.remove('open');
-      b.setAttribute('aria-expanded', 'false');
-      b.querySelector('.toggle-icon').textContent = '+';
-    }
-  });
-  // Toggle this one
-  if (!isOpen) {
-    panel.classList.add('open');
-    btn.classList.add('open');
-    btn.setAttribute('aria-expanded', 'true');
-    btn.querySelector('.toggle-icon').textContent = '+';
-  }
-}
-
-</script>
 </head>
 <body>
-
-<!-- MOBILE BOTTOM NAV for consulting -->
-<style>
-.mob-nav{display:none;position:fixed;bottom:0;left:0;right:0;z-index:900;background:rgba(10,14,20,0.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid var(--bdark);padding:clamp(7px,1.3vh,11px) clamp(8px,3vw,20px);align-items:center;justify-content:space-between;gap:4px;}
-@media(max-width:768px),(pointer:coarse){.mob-nav{display:flex;}}
-.mob-btn{display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:none;cursor:pointer;padding:5px 8px;color:rgba(255,255,255,0.38);font-family:'DM Mono',monospace;font-size:clamp(0.32rem,1.8vw,0.42rem);letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:color 0.2s;flex:1;}
-.mob-btn.active,.mob-btn:hover{color:var(--teal2);}
-.mob-btn svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.5;}
-.mob-indicator{position:absolute;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--teal2));transition:width 0.4s ease,left 0.4s ease;}
-</style>
-
-<nav class="mob-nav" aria-label="Mobile navigation">
-  <div class="mob-indicator"></div>
-  <a class="mob-btn" href="index.html">
-    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Profile
-  </a>
-  <a class="mob-btn active" href="consulting.html">
-    <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Consult
-  </a>
-  <a class="mob-btn" href="#diagnosis">
-    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Problem
-  </a>
-  <a class="mob-btn" href="#decision">
-    <svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>Services
-  </a>
-  <a class="mob-btn" href="#final-cta">
-    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Contact
-  </a>
-</nav>
 
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="progress-bar" id="progressBar"></div>
 
 <!-- TOP NAV -->
-<header class="top-nav" role="navigation">
+<header class="top-nav" role="navigation" aria-label="Main navigation">
   <a class="top-nav-logo" href="index.html">Kimberly-Ann <span>Athayde</span></a>
-  <nav class="nav-links">
-    <a class="nav-link hide-mob" href="index.html">Profile</a>
-    <a class="nav-link active" href="consulting.html">Consulting</a>
-    <a class="nav-link hide-mob" href="index.html#s-career1">Experience</a>
-    <a class="nav-link hide-mob" href="#final-cta">Contact</a>
-    <a class="nav-cta" href="mailto:kimberly.athayde@gmail.com?subject=Consulting Enquiry - Kimberly-Ann Athayde">Book Consultation</a>
+  <nav class="top-nav-menu">
+    <a class="top-nav-link" href="index.html">Home</a>
+    <a class="top-nav-link hide-mobile" href="#for-brands">For Brands</a>
+    <a class="top-nav-link hide-mobile" href="#capabilities">Capabilities</a>
+    <a class="top-nav-link hide-mobile" href="#engagement">Engagement</a>
+    <a class="top-nav-cta" href="mailto:kimberly.athayde@gmail.com?subject=Consulting Enquiry - Kimberly-Ann Athayde">Enquire</a>
   </nav>
 </header>
 
-<!-- STICKY JUMP NAV -->
-<nav class="jump-nav" aria-label="Page navigation">
-  <div class="jump-nav-inner">
-    <a class="jn-link" href="#diagnosis">Problem</a>
-    <a class="jn-link" href="#decision">Services</a>
-    <a class="jn-link" href="#cases">Results</a>
-    <a class="jn-link" href="#proof">Track Record</a>
-    <a class="jn-link jn-cta" href="#final-cta">Start a Conversation &darr;</a>
-  </div>
+<!-- MOBILE BOTTOM NAV -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <button class="mob-nav-btn" onclick="window.location.href='index.html'">
+    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Home
+  </button>
+  <button class="mob-nav-btn active" data-target="hero">
+    <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+    Consult
+  </button>
+  <button class="mob-nav-btn" data-target="for-brands">
+    <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+    Brands
+  </button>
+  <button class="mob-nav-btn" data-target="capabilities">
+    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+    Skills
+  </button>
+  <button class="mob-nav-btn" data-target="engagement">
+    <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+    Engage
+  </button>
 </nav>
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
+<!-- HERO: repositioned -->
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
-  <div class="hero-vbar"></div>
-  <div class="hero-orb"></div>
-  <div class="hero-wm" aria-hidden="true">FIX</div>
-
-  <div class="hero-main" style="grid-template-columns:1fr;max-width:800px;padding-bottom:clamp(20px,4vh,40px);">
-    <div class="hero-left">
-      <div class="hero-kicker">Sponsorship Operations &middot; Sports Infrastructure &middot; Execution Strategy</div>
-      <h1 class="hero-h1">Fixing the gaps<br>where sport<br><em>loses money.</em></h1>
-      <div class="hero-hr"></div>
-      <p class="hero-desc" style="max-width:520px;">
-        For leagues, clubs, venues and sports organisations operating under commercial pressure. <strong>Most consultants advise. I fix execution where failure is visible, costly, and public.</strong>
-      </p>
-      <div class="hero-trigger">
-        <div class="hero-trigger-label">Relevant if</div>
-        <div class="hero-trigger-items">
-          <span class="trigger-item">Sponsor renewal feels uncertain</span>
-          <span class="trigger-item">Last event had delivery issues</span>
-          <span class="trigger-item">Teams are misaligned</span>
-          <span class="trigger-item">Planning a sports venue or facility</span>
-          <span class="trigger-item">Launching a sports business or IP</span>
-          <span class="trigger-item">Building a youth athlete programme</span>
-        </div>
-      </div>
-      <div class="hero-cta-row">
-        <a class="btn btn-p" href="#decision">View All Services &darr;</a>
-        <a class="btn btn-s" href="#final-cta">Request a Confidential Assessment</a>
-      </div>
+  <div class="hero-wm" aria-hidden="true">KAA</div>
+  <div class="hero-inner">
+    <div class="eyebrow reveal d1 in">Sports Business Consultant &middot; Sponsorship Strategy Advisor</div>
+    <h1 class="hero-h1 reveal d2 in">A strategic advisor helping brands, sponsors, investors, rights holders and sports organisations <em>maximise the commercial value of sport.</em></h1>
+    <p class="hero-desc reveal d3 in">From market entry and sponsorship strategy through to activation, commercial delivery and long-term partnership management, delivered from inside the IPL, ISL, PKL, ICC events, UEFA, ATP and the Olympics, not observed from the outside.</p>
+    <p class="hero-proof reveal d4 in">19 Years &middot; INR 100Cr+ Sponsorships Managed and Activated &middot; 1,500+ Matches Delivered</p>
+    <div class="hero-cta-row reveal d5 in">
+      <a href="#engagement" class="btn btn-p">View Engagement Options</a>
+      <a href="#for-brands" class="btn btn-s">For Brands</a>
     </div>
   </div>
-
   <div class="score-strip">
-    <div class="sc"><div class="sc-num"><span class="sc-pre">INR </span>100<span class="sc-suf">Cr+</span></div><div class="sc-lbl">Sponsorships Managed</div></div>
-    <div class="sc"><div class="sc-num">1,500<span class="sc-suf">+</span></div><div class="sc-lbl">Matches Delivered</div></div>
+    <div class="sc"><div class="sc-num"><span class="sc-pre">INR </span>100<span class="sc-suf">Cr+</span></div><div class="sc-lbl">Sponsorships Managed and Activated</div></div>
+    <div class="sc"><div class="sc-num">1,500<span class="sc-suf">+</span></div><div class="sc-lbl">Matches Delivered at Scale</div></div>
     <div class="sc"><div class="sc-num">19</div><div class="sc-lbl">Years in Global Sport</div></div>
-    <div class="sc"><div class="sc-num" style="color:var(--gold2);font-size:clamp(1.2rem,2.8vw,2.5rem);">Zero</div><div class="sc-lbl">Delivery Failures</div></div>
-  </div>
-  <!-- PROPERTY TRUST STRIP -->
-  <div style="background:rgba(255,255,255,0.02);border-top:1px solid var(--bdark);padding:clamp(12px,2vh,18px) var(--sp);position:relative;z-index:3;animation:fadeUp 0.8s 1.7s both;">
-    <div style="font-family:'DM Mono',monospace;font-size:clamp(0.34rem,0.78vw,0.46rem);letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.22);margin-bottom:clamp(8px,1.5vh,12px);">Properties served across 19 years</div>
-    <div style="display:flex;flex-wrap:wrap;gap:clamp(8px,1.5vw,14px);align-items:center;">
-      <span style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:4px 12px;border:1px solid rgba(255,255,255,0.07);">Indian Premier League</span>
-      <span style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:4px 12px;border:1px solid rgba(255,255,255,0.07);">Pro Kabaddi League</span>
-      <span style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:4px 12px;border:1px solid rgba(255,255,255,0.07);">Indian Super League</span>
-      <span style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:4px 12px;border:1px solid rgba(255,255,255,0.07);">ICC T20 World Cup</span>
-      <span style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:4px 12px;border:1px solid rgba(255,255,255,0.07);">UEFA Champions League Finals</span>
-      <span style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:4px 12px;border:1px solid rgba(255,255,255,0.07);">ATP Masters Tennis</span>
-      <span style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:4px 12px;border:1px solid rgba(255,255,255,0.07);">London 2012 Olympics</span>
-      <span style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:4px 12px;border:1px solid rgba(255,255,255,0.07);">Delhi Capitals &middot; IPL</span>
-      <span style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:4px 12px;border:1px solid rgba(255,255,255,0.07);">Lusofonia Games 2014</span>
-      <span style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.85vw,0.52rem);letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:4px 12px;border:1px solid rgba(255,255,255,0.07);">Tottenham Hotspur Foundation</span>
-    </div>
+    <div class="sc"><div class="sc-num">50<span class="sc-suf">+</span></div><div class="sc-lbl">Venues Managed Across Career</div></div>
   </div>
 </section>
 
-<!-- ============================================================
-     DIAGNOSIS — THE PROBLEM
-     ============================================================ -->
-<section class="diagnosis" id="diagnosis">
-  <div class="eyebrow reveal">The Problem</div>
-  <div class="diag-grid">
-    <div>
-      <h2 class="diag-headline reveal">The system isn't<br>working.<br><em>Here is why.</em></h2>
-      <div class="diag-items reveal">
-        <div class="diag-item">
-          <div class="diag-num">01</div>
-          <div>
-            <div class="diag-title">Sponsor Leakage</div>
-            <div class="diag-text">Commitments signed, delivery incomplete. Sponsors notice before they say anything. Renewals shrink.</div>
-          </div>
-        </div>
-        <div class="diag-item">
-          <div class="diag-num">02</div>
-          <div>
-            <div class="diag-title">Execution Gaps</div>
-            <div class="diag-text">No systems. Errors compound across a season. Match day and activation quality depends on individual effort, not structure.</div>
-          </div>
-        </div>
-        <div class="diag-item">
-          <div class="diag-num">03</div>
-          <div>
-            <div class="diag-title">Commercial Without Operations</div>
-            <div class="diag-text">Deals sold ahead of the organisation's capacity to deliver them. The gap between what was promised and what happened costs more than the consulting fee to fix after the fact.</div>
-          </div>
-        </div>
-        <div class="diag-item">
-          <div class="diag-num">04</div>
-          <div>
-            <div class="diag-title">Capital Without a Framework</div>
-            <div class="diag-text">Infrastructure built. Businesses launched. Programmes started. Without commercial architecture, operational systems, or governance. The decisions that cost most were made first.</div>
-          </div>
-        </div>
-      </div>
+<!-- BRAND & SPONSORSHIP ADVISORY -->
+<section class="brands-sec sp" id="for-brands">
+  <div class="eyebrow reveal d1">Brand Activation Consultant &middot; Sponsorship Advisory</div>
+  <h2 class="section-title reveal d2">Brand &amp; Sponsorship <em>Advisory.</em></h2>
+  <div class="brands-grid">
+    <div class="reveal d3">
+      <p class="brands-body">Helping brands make smarter investments in sport, whether entering for the first time, managing an existing sponsorship portfolio, or maximising the value of long-term partnerships. Independent commercial advice built on nearly two decades of delivering sponsorships from inside the industry.</p>
+      <p class="brands-body">Built to help brands avoid expensive sponsorship mistakes, negotiate stronger commercial outcomes, and ensure sponsorship investments translate into measurable business results.</p>
+      <a href="#engagement" class="btn btn-p">View Engagement Options</a>
     </div>
-    <div class="diag-right reveal">
-      <div class="diag-statement">
-        <p>Most organisations don't lack ambition. They lack the <strong>operational architecture</strong> to make that ambition land consistently, season after season, sponsor after sponsor.</p>
-      </div>
-      <div class="diag-who">
-        <div class="diag-who-row">Leagues and federations under commercial pressure</div>
-        <div class="diag-who-row">Clubs and franchises with multiple sponsors to service</div>
-        <div class="diag-who-row">Venue owners and infrastructure investors</div>
-        <div class="diag-who-row">Sports start-ups and emerging IPs building from zero</div>
-        <div class="diag-who-row">Academies managing youth athlete development pathways</div>
-      </div>
-    </div>
+    <ul class="brands-list reveal d4">
+      <li>Sports sponsorship strategy</li>
+      <li>Sponsorship portfolio planning</li>
+      <li>Market entry into sport</li>
+      <li>Rights holder evaluation and selection</li>
+      <li>Sponsorship negotiation support</li>
+      <li>Sponsorship activation planning</li>
+      <li>Athlete and ambassador partnerships</li>
+      <li>Sponsorship governance</li>
+      <li>Measurement and ROI frameworks</li>
+      <li>Renewal and exit strategy</li>
+      <li>Internal sponsorship management</li>
+      <li>Agency and rights holder oversight</li>
+    </ul>
   </div>
 </section>
 
-<!-- ============================================================
-     DECISION LAYER — CORE OFFER
-     ============================================================ -->
-<section class="decision" id="decision">
-  <div class="decision-bg"></div>
-  <div class="decision-grid-bg"></div>
-  <div class="decision-inner">
-    <div class="decision-header">
-      <div>
-        <div class="eyebrow reveal" style="color:var(--teal2);">Engagement Options</div>
-        <h2 class="dec-headline reveal">Choose your<br><em>entry point.</em></h2>
-      </div>
-      <div class="dec-anchor reveal">
-        <div class="dec-anchor-label">Risk context</div>
-        <div class="dec-anchor-text">Typical portfolios at risk: INR 5Cr to 100Cr+</div>
-        <div class="dec-anchor-sub">One prevented sponsor exit covers the full cost</div>
-      </div>
-    </div>
-
-    <!-- SCAN TABLE -->
-    <div class="dec-compare reveal" style="grid-template-columns:repeat(3,1fr);">
-      <div class="dc-cell">
-        <div class="dc-label">01 &middot; Audit</div>
-        <div class="dc-name">Find what is broken</div>
-        <div class="dc-what">Short diagnostic</div>
-        <div class="dc-price" style="color:var(--pearl3);font-size:clamp(0.34rem,0.78vw,0.48rem);">Click card to reveal fee</div>
-      </div>
-      <div class="dc-cell featured">
-        <div class="dc-label feat-label">02 &middot; Fix Program &middot; Most Selected</div>
-        <div class="dc-name">Fix and implement</div>
-        <div class="dc-what">Sponsorship and operations</div>
-        <div class="dc-price" style="color:var(--pearl3);font-size:clamp(0.34rem,0.78vw,0.48rem);letter-spacing:0.12em;">Click card below to reveal fee</div>
-      </div>
-      <div class="dc-cell">
-        <div class="dc-label">03 &middot; Retainer</div>
-        <div class="dc-name">Ongoing oversight</div>
-        <div class="dc-what">Season-long advisory</div>
-        <div class="dc-price" style="color:var(--pearl3);font-size:clamp(0.34rem,0.78vw,0.48rem);letter-spacing:0.12em;">Click card below to reveal fee</div>
-      </div>
-    </div>
-    <!-- EXTENDED SCAN TABLE: Three new pillars -->
-    <div class="dec-compare reveal" style="grid-template-columns:repeat(3,1fr);margin-top:2px;">
-      <div class="dc-cell" style="border-top:2px solid var(--gold);">
-        <div class="dc-label" style="color:var(--gold2);">04 &middot; Infrastructure</div>
-        <div class="dc-name">Plan the venue</div>
-        <div class="dc-what">Sports facility strategy</div>
-        <div class="dc-price" style="color:var(--pearl3);font-size:clamp(0.34rem,0.78vw,0.48rem);">Click card to reveal fee</div>
-      </div>
-      <div class="dc-cell" style="border-top:2px solid var(--teal3);">
-        <div class="dc-label" style="color:var(--teal3);">05 &middot; Start-up &amp; Planning</div>
-        <div class="dc-name">Launch the business</div>
-        <div class="dc-what">New sports IP and league build</div>
-        <div class="dc-price" style="color:var(--pearl3);font-size:clamp(0.34rem,0.78vw,0.48rem);">Click card to reveal fee</div>
-      </div>
-      <div class="dc-cell" style="border-top:2px solid var(--pearl2);">
-        <div class="dc-label" style="color:var(--pearl2);">06 &middot; Youth Athlete Management</div>
-        <div class="dc-name">Build the pathway</div>
-        <div class="dc-what">Academy and athlete programme design</div>
-        <div class="dc-price" style="color:var(--pearl3);font-size:clamp(0.34rem,0.78vw,0.48rem);">Click card to reveal fee</div>
-      </div>
-    </div>
-
-    <!-- DETAILED CARDS -->
-    <div class="svc-cards">
-      <div class="svc reveal d2">
-        <div class="svc-tag">Targeted Diagnostic</div>
-        <div class="svc-num">01</div>
-        <h3 class="svc-title">Targeted Audit</h3>
-        <button class="fee-toggle" onclick="toggleFee(this)" aria-expanded="false">
-          <span>View Engagement Fee</span>
-          <span class="toggle-icon">+</span>
-        </button>
-        <div class="fee-panel">
-          <div class="fee-revealed">
-            <div class="fee-revealed-num">Fixed-scope</div>
-            <div class="fee-revealed-label">Fee on enquiry &middot; Scoped per engagement</div>
-            <div class="fee-revealed-note">Engagement fee confirmed following an initial confidential conversation about the scope, urgency and organisation context.</div>
-          </div>
-        </div>
-        <div class="svc-scope">Delivery Integrity Audit&#8482;</div>
-        <p class="svc-desc">Something is off. You need clarity before committing. Fast, focused, no obligation to proceed further.</p>
-        <ul class="svc-list">
-          <li>Sponsorship delivery gap analysis</li>
-          <li>Operations risk assessment</li>
-          <li>Priority action framework</li>
-          <li>Clear view of what it is costing</li>
-        </ul>
-        <p class="svc-bestfor">Best for: Pre-season checks &middot; sponsor concerns &middot; uncertainty before full commitment</p>
-        <a class="btn btn-s" href="mailto:kimberly.athayde@gmail.com?subject=Audit Enquiry - Kimberly-Ann Athayde">Request Audit Scope</a>
-      </div>
-      <div class="svc svc-featured reveal d3">
-        <div class="svc-tag">Core Engagement &middot; Most Selected</div>
-        <div class="svc-num">02</div>
-        <h3 class="svc-title">Sponsorship &amp; Operations Fix Program</h3>
-        <button class="fee-toggle" onclick="toggleFee(this)" aria-expanded="false">
-          <span>View Engagement Fee</span>
-          <span class="toggle-icon">+</span>
-        </button>
-        <div class="fee-panel">
-          <div class="fee-revealed">
-            <div class="fee-revealed-num">INR 10,00,000</div>
-            <div class="fee-revealed-label">Fixed fee &middot; 8-10 week engagement</div>
-            <div class="fee-revealed-note">One prevented sponsor exit typically covers the full cost of this engagement.</div>
-          </div>
-        </div>
-        <div class="svc-scope">Diagnose &rarr; Build &rarr; Implement</div>
-        <p class="svc-desc">Identifies gaps, fixes them, ensures they do not repeat. Visible within the first two to three weeks.</p>
-        <ul class="svc-list">
-          <li>Full diagnostic and risk mapping</li>
-          <li>Sponsor delivery architecture built</li>
-          <li>Match-day execution frameworks</li>
-          <li>Team alignment and accountability</li>
-          <li>Live implementation support</li>
-        </ul>
-        <div class="svc-roi">One prevented sponsor exit typically covers the full cost of this engagement.</div>
-        <a class="btn btn-p" href="mailto:kimberly.athayde@gmail.com?subject=Fix Program Enquiry - Kimberly-Ann Athayde">Discuss Your Situation</a>
-      </div>
-      <div class="svc reveal d4">
-        <div class="svc-tag gold-tag">Ongoing Senior Input</div>
-        <div class="svc-num">03</div>
-        <h3 class="svc-title">Advisory Retainer</h3>
-        <button class="fee-toggle" onclick="toggleFee(this)" aria-expanded="false">
-          <span>View Monthly Fee</span>
-          <span class="toggle-icon">+</span>
-        </button>
-        <div class="fee-panel">
-          <div class="fee-revealed">
-            <div class="fee-revealed-num">INR 3,00,000</div>
-            <div class="fee-revealed-label">Per month &middot; Season-long commitment</div>
-            <div class="fee-revealed-note">Typically structured across a full season cycle. Scope and duration confirmed at engagement start.</div>
-          </div>
-        </div>
-        <div class="svc-scope">Season-long oversight</div>
-        <p class="svc-desc">Senior oversight across a full season or commercial cycle. The expert in the room, consistently.</p>
-        <ul class="svc-list">
-          <li>Regular senior advisory sessions</li>
-          <li>Commercial strategy input</li>
-          <li>Sponsor relationship counsel</li>
-          <li>Real-time escalation support</li>
-        </ul>
-        <p class="svc-bestfor">Best for: Multi-event calendars &middot; high-value sponsor portfolios &middot; ongoing delivery pressure</p>
-        <a class="btn btn-g" href="mailto:kimberly.athayde@gmail.com?subject=Advisory Retainer Enquiry - Kimberly-Ann Athayde">Request Engagement Details</a>
-      </div>
-    </div>
-
-    <!-- ── NEW PILLAR DIVIDER ── -->
-    <div id="infrastructure-anchor" style="margin-top:clamp(28px,5vh,48px);padding:clamp(14px,2.5vh,22px) clamp(18px,3vw,28px);background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.18);border-left:3px solid var(--gold);" class="reveal">
-      <div style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.88vw,0.5rem);letter-spacing:0.3em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px;">Extended Consulting Practice</div>
-      <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(1.2rem,2.5vw,2rem);color:var(--white);margin-bottom:6px;">Infrastructure &middot; Start-ups &middot; Youth Athlete Management</div>
-      <div style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.7rem,1.2vw,0.86rem);color:rgba(205,240,232,0.5);line-height:1.72;">Three specialised consulting disciplines built on the same 19-year foundation. Each operates as a standalone engagement or as part of a broader ecosystem build.</div>
-    </div>
-
-    <div class="svc-cards" style="margin-top:2px;">
-      <!-- INFRASTRUCTURE -->
-      <div class="svc reveal d2" style="border-top-color:var(--gold);background:rgba(201,168,76,0.03);">
-        <div class="svc-tag gold-tag">Sports Infrastructure Consulting</div>
-        <div class="svc-num">04</div>
-        <h3 class="svc-title">Sports Infrastructure Planning &amp; Strategy</h3>
-        <button class="fee-toggle" onclick="toggleFee(this)" aria-expanded="false">
-          <span>View Project Fee</span>
-          <span class="toggle-icon">+</span>
-        </button>
-        <div class="fee-panel">
-          <div class="fee-revealed">
-            <div class="fee-revealed-num">INR 25,00,000+</div>
-            <div class="fee-revealed-label">Project-based &middot; Fee varies by scope and scale</div>
-            <div class="fee-revealed-note">Infrastructure consulting is scoped individually. Fee reflects the complexity, scale and duration of the project. Initial consultation is confidential and no-obligation.</div>
-          </div>
-        </div>
-        <div class="svc-scope" style="border-color:rgba(201,168,76,0.3);color:var(--gold2);">Venue Readiness Architecture&#8482;</div>
-        <p class="svc-desc">For investors, developers and organisations planning sports venues and facilities. Infrastructure without a commercial framework is capital at risk. I build the framework before a brick is laid.</p>
-        <ul class="svc-list">
-          <li>Venue feasibility and commercial viability assessment</li>
-          <li>Revenue model design — events, tenancies, sponsorship</li>
-          <li>Operational infrastructure and staffing frameworks</li>
-          <li>Partnership and anchor tenant strategy</li>
-        </ul>
-        <p class="svc-bestfor">Best for: Greenfield venue projects &middot; facility repurposing &middot; academy infrastructure &middot; government sports development investment</p>
-        <div class="svc-roi" style="border-left-color:var(--gold);color:var(--gold2);">Infrastructure decisions made without a commercial operating model cost multiples of the consulting fee to correct. This engagement is the insurance policy.</div>
-        <a class="btn btn-g" href="mailto:kimberly.athayde@gmail.com?subject=Infrastructure Consulting Enquiry - Kimberly-Ann Athayde">Discuss Your Project</a>
-      </div>
-
-      <!-- START-UP AND PLANNING -->
-      <div class="svc reveal d3" style="border-top-color:var(--teal3);background:rgba(0,240,212,0.02);">
-        <div class="svc-tag" style="color:var(--teal3);">Sports Start-up &amp; Launch Planning</div>
-        <div class="svc-num">05</div>
-        <h3 class="svc-title">Sports Business Start-up &amp; Planning</h3>
-        <button class="fee-toggle" onclick="toggleFee(this)" aria-expanded="false">
-          <span>View Project Fee</span>
-          <span class="toggle-icon">+</span>
-        </button>
-        <div class="fee-panel">
-          <div class="fee-revealed">
-            <div class="fee-revealed-num">INR 15,00,000+</div>
-            <div class="fee-revealed-label">Project-based &middot; Launch to first-season delivery</div>
-            <div class="fee-revealed-note">Scoped based on the stage of the business, the complexity of the launch, and the level of ongoing involvement required.</div>
-          </div>
-        </div>
-        <div class="svc-scope" style="border-color:rgba(0,240,212,0.25);color:var(--teal3);">Sports IP Launch Framework&#8482;</div>
-        <p class="svc-desc">For founders launching leagues, IPs, academies or sports businesses. Most fail in year one because the architecture was never built. I build it at the start, not after the failure.</p>
-        <ul class="svc-list">
-          <li>Business model and commercial architecture design</li>
-          <li>Sponsorship strategy and rights structuring</li>
-          <li>Governance framework and stakeholder mapping</li>
-          <li>First-season operational planning and risk management</li>
-        </ul>
-        <p class="svc-bestfor">Best for: New leagues and IPs &middot; sports academies &middot; franchise concepts &middot; sports tech and media ventures &middot; emerging market entries</p>
-        <div class="svc-roi">Built from the same first-principles approach used to launch ISPL from zero infrastructure across a league and eight franchises simultaneously.</div>
-        <a class="btn btn-s" href="mailto:kimberly.athayde@gmail.com?subject=Start-up Planning Enquiry - Kimberly-Ann Athayde">Discuss Your Launch</a>
-      </div>
-
-      <!-- YOUTH ATHLETE MANAGEMENT -->
-      <div class="svc reveal d4" style="border-top-color:var(--pearl2);background:rgba(154,221,208,0.02);">
-        <div class="svc-tag" style="color:var(--pearl2);">Youth Athlete Management</div>
-        <div class="svc-num">06</div>
-        <h3 class="svc-title">Youth Athlete Management &amp; Programme Design</h3>
-        <button class="fee-toggle" onclick="toggleFee(this)" aria-expanded="false">
-          <span>View Programme Fee</span>
-          <span class="toggle-icon">+</span>
-        </button>
-        <div class="fee-panel">
-          <div class="fee-revealed">
-            <div class="fee-revealed-num">INR 5,00,000+</div>
-            <div class="fee-revealed-label">Programme-based &middot; Structured per cohort or season</div>
-            <div class="fee-revealed-note">Fee varies based on programme size, number of athletes, duration and depth of involvement required across welfare, coaching and pathway design.</div>
-          </div>
-        </div>
-        <div class="svc-scope" style="border-color:rgba(154,221,208,0.25);color:var(--pearl2);">Athlete Development Pathway System&#8482;</div>
-        <p class="svc-desc">For academies, clubs and federations working with young athletes. Without structured pathways and welfare frameworks, talent burns out or disappears. I design the systems that protect and develop athletes through to professional readiness.</p>
-        <ul class="svc-list">
-          <li>Athlete identification and development pathway design</li>
-          <li>Welfare, safeguarding and wellbeing framework</li>
-          <li>Coach and support staff accountability systems</li>
-          <li>Athlete positioning and visibility strategy</li>
-        </ul>
-        <p class="svc-bestfor">Best for: Sports academies &middot; national federation youth programmes &middot; club youth sections &middot; private athlete management operations &middot; school sports programmes</p>
-        <div class="svc-roi" style="border-left-color:var(--pearl2);color:var(--pearl2);">Grounded in 19 years of inclusive sports development including grassroots hockey and football programmes for women and youth in partnership with former Olympic athletes.</div>
-        <a class="btn btn-s" style="border-color:rgba(154,221,208,0.3);color:var(--pearl2);" href="mailto:kimberly.athayde@gmail.com?subject=Youth Athlete Management Enquiry - Kimberly-Ann Athayde">Discuss Your Programme</a>
-      </div>
-    </div>
+<!-- WHO WE HELP -->
+<section class="sp" id="who-we-help">
+  <div class="eyebrow reveal d1">Sports Advisory Services</div>
+  <h2 class="section-title reveal d2">Who this <em>works for.</em></h2>
+  <div class="wh-grid">
+    <div class="wh-card reveal d2"><div class="wh-title">Brands</div><div class="wh-desc">Looking to sponsor sport or improve existing sponsorship performance.</div></div>
+    <div class="wh-card reveal d3"><div class="wh-title">Rights Holders</div><div class="wh-desc">Leagues, clubs, federations, tournaments and venues.</div></div>
+    <div class="wh-card reveal d4"><div class="wh-title">Investors</div><div class="wh-desc">Assessing opportunities in sports businesses and infrastructure.</div></div>
+    <div class="wh-card reveal d5"><div class="wh-title">Start-ups</div><div class="wh-desc">Launching sports products, leagues or services.</div></div>
+    <div class="wh-card reveal d6"><div class="wh-title">Government</div><div class="wh-desc">Sports infrastructure and development initiatives.</div></div>
+    <div class="wh-card reveal d6"><div class="wh-title">Sports Sponsors</div><div class="wh-desc">Companies currently investing in sport that want independent strategic advice, stronger commercial returns, and expert oversight of sponsorship delivery.</div></div>
+    <div class="wh-card reveal d6"><div class="wh-title">New Market Entrants</div><div class="wh-desc">Businesses exploring sport for the first time, looking for guidance on where to invest, which properties align with their objectives, and how to activate sponsorships effectively.</div></div>
   </div>
 </section>
 
-<!-- ============================================================
-     PROCESS
-     ============================================================ -->
-<section class="process" id="process">
-  <div class="proc-header">
-    <div>
-      <div class="eyebrow reveal">The Fix Program</div>
-      <h2 class="proc-headline reveal">The Execution<br><em>Integrity System.</em></h2>
-      <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.75rem,1.4vw,0.96rem);color:rgba(205,240,232,0.5);line-height:1.75;margin-bottom:clamp(12px,2vh,20px);max-width:400px;" class="reveal">A proprietary three-phase framework built from 19 years of live delivery across the world's most demanding sports environments.</p>
-      <div class="proc-sprint reveal">
-        <div class="sprint-tag">Diagnose</div>
-        <div class="sprint-tag">Build</div>
-        <div class="sprint-tag">Implement</div>
-      </div>
-      <p style="font-family:'DM Mono',monospace;font-size:clamp(0.38rem,0.9vw,0.5rem);letter-spacing:0.18em;text-transform:uppercase;color:var(--gold2);margin-top:clamp(6px,1.2vh,10px);" class="reveal">Visible improvements within weeks 2 to 3 &middot; Systems that outlast the engagement</p>
-    </div>
-    <div class="proc-price-block reveal">
-      <button class="fee-toggle" onclick="toggleFee(this)" aria-expanded="false" style="margin-bottom:0;width:100%;border-color:rgba(0,212,184,0.3);color:var(--teal2);">
-        <span>View Program Fee</span>
-        <span class="toggle-icon" style="background:rgba(0,212,184,0.15);">+</span>
-      </button>
-      <div class="fee-panel">
-        <div class="fee-revealed" style="border-color:rgba(0,212,184,0.2);background:rgba(0,184,156,0.05);">
-          <div class="fee-revealed-num" style="color:var(--teal2);">INR 10,00,000</div>
-      <div class="fee-revealed-label">Fixed fee &middot; 8-10 week engagement</div>
-      <div class="fee-revealed-note">The first step is a confidential conversation. No obligation. Focused on whether this is the right fit for your organisation and your current season window.</div>
-        </div>
-      </div>
-    </div>
+<!-- CAPABILITIES -->
+<section class="cap-sec sp" id="capabilities">
+  <div class="eyebrow reveal d1">Sports Commercial Strategy &middot; Sports Infrastructure Consultant</div>
+  <h2 class="section-title reveal d2">Capabilities <em>at a glance.</em></h2>
+  <p class="section-sub reveal d3">Twelve areas of practice, each grounded in delivery experience rather than theory.</p>
+  <div class="cap-grid">
+    <div class="cap reveal d1"><span class="cap-num">01</span><span class="cap-name">Sponsorship Strategy</span></div>
+    <div class="cap reveal d1"><span class="cap-num">02</span><span class="cap-name">Sponsorship Activation</span></div>
+    <div class="cap reveal d2"><span class="cap-num">03</span><span class="cap-name">Commercial Advisory</span></div>
+    <div class="cap reveal d2"><span class="cap-num">04</span><span class="cap-name">Sports Business Consulting</span></div>
+    <div class="cap reveal d3"><span class="cap-num">05</span><span class="cap-name">Infrastructure Advisory</span></div>
+    <div class="cap reveal d3"><span class="cap-num">06</span><span class="cap-name">Governance</span></div>
+    <div class="cap reveal d4"><span class="cap-num">07</span><span class="cap-name">Revenue Strategy</span></div>
+    <div class="cap reveal d4"><span class="cap-num">08</span><span class="cap-name">Partnership Development</span></div>
+    <div class="cap reveal d5"><span class="cap-num">09</span><span class="cap-name">Operational Excellence</span></div>
+    <div class="cap reveal d5"><span class="cap-num">10</span><span class="cap-name">Market Entry</span></div>
+    <div class="cap reveal d6"><span class="cap-num">11</span><span class="cap-name">Sports Start-up Advisory</span></div>
+    <div class="cap reveal d6"><span class="cap-num">12</span><span class="cap-name">Youth Sport Systems</span></div>
+    <div class="cap reveal d6"><span class="cap-num">13</span><span class="cap-name">Sponsorship Portfolio Management</span></div>
   </div>
-  <div class="proc-phases">
-    <div class="phase reveal d2">
-      <div class="phase-wk">Weeks 1-2</div>
-      <div class="phase-num">01</div>
-      <h3 class="phase-title">Diagnostic &amp; Risk Analysis</h3>
-      <ul class="phase-items">
-        <li>Contracts vs actual delivery gap mapped</li>
-        <li>Operations and accountability structures assessed</li>
-        <li>High-risk failure points identified</li>
+</section>
+
+<!-- ENGAGEMENT OPTIONS -->
+<section class="decision sp" id="engagement">
+  <div class="eyebrow reveal d1">Engagement Options</div>
+  <h2 class="section-title reveal d2">Ways to <em>Work Together.</em></h2>
+  <p class="section-sub reveal d3">From a bounded diagnostic to a standing advisory seat, each tier is scoped to a specific outcome, not a block of hours.</p>
+
+  <div class="svc-cards">
+    <div class="svc reveal d1">
+      <div class="svc-num">01</div>
+      <div class="svc-tag">Diagnostic</div>
+      <h3 class="svc-title">Targeted Diagnostic</h3>
+      <div class="svc-scope">2&ndash;3 Week Engagement</div>
+      <p class="svc-desc">A bounded assessment of sponsorship delivery and operational execution, run against the Delivery Integrity Audit&trade; methodology, to surface exactly where value is leaking before committing to a larger engagement.</p>
+      <ul class="svc-list">
+        <li>Delivery Integrity Audit&trade;</li>
+        <li>Sponsorship activation review</li>
+        <li>Risk &amp; gap report</li>
+        <li>Executive findings briefing</li>
       </ul>
-      <div class="phase-outcome">
-        <div class="phase-outcome-lbl">Outcome</div>
-        <div class="phase-outcome-text">Clear visibility on where execution is breaking and what it is costing. No guesswork.</div>
+      <p class="svc-roi">Built to answer one question: where exactly is delivery breaking down.</p>
+      <p class="svc-bestfor">Best for organisations testing fit before a fuller engagement</p>
+      <div class="svc-fee-block">
+        <button class="fee-toggle" aria-expanded="false" aria-controls="fee-panel-1"><span>View Diagnostic Fee</span><span class="fee-plus">+</span></button>
+        <div class="fee-panel" id="fee-panel-1"><div class="fee-panel-inner">
+          <div class="fee-amount">&#8377;3,50,000 <span>Fixed Fee</span></div>
+          <p class="fee-note">Delivered in 2&ndash;3 weeks. Applies as credit toward Core Engagement if commissioned within 60 days.</p>
+        </div></div>
       </div>
     </div>
-    <div class="phase reveal d3">
-      <div class="phase-wk">Weeks 3-5</div>
-      <div class="phase-num">02</div>
-      <h3 class="phase-title">Execution Framework Design</h3>
-      <ul class="phase-items">
-        <li>Sponsor delivery architecture designed</li>
-        <li>Match-day execution frameworks built</li>
-        <li>Accountability and escalation paths defined</li>
+
+    <div class="svc svc-featured reveal d2">
+      <div class="svc-num">02</div>
+      <div class="svc-tag gold-tag">Core &middot; Most Selected</div>
+      <h3 class="svc-title">Core Engagement</h3>
+      <div class="svc-scope">Project-Based &middot; 8&ndash;12 Weeks</div>
+      <p class="svc-desc">The full execution overhaul: sponsorship delivery, operational systems, and venue readiness brought up to a standard that survives scale, scrutiny, and a live event calendar.</p>
+      <ul class="svc-list">
+        <li>Execution Integrity System&trade;</li>
+        <li>Venue Readiness Architecture&trade;</li>
+        <li>Sponsor delivery redesign</li>
+        <li>Staff &amp; systems handover</li>
       </ul>
-      <div class="phase-outcome">
-        <div class="phase-outcome-lbl">Outcome</div>
-        <div class="phase-outcome-text">A structured, repeatable system that holds across every fixture, season and sponsor cycle.</div>
+      <p class="svc-roi">The engagement most clients choose once the diagnostic confirms scope.</p>
+      <p class="svc-bestfor">Best for organisations ready to fix delivery at the root, not the symptom</p>
+      <div class="svc-fee-block">
+        <button class="fee-toggle" aria-expanded="false" aria-controls="fee-panel-2"><span>View Engagement Fee</span><span class="fee-plus">+</span></button>
+        <div class="fee-panel" id="fee-panel-2"><div class="fee-panel-inner">
+          <div class="fee-amount">&#8377;12,00,000+ <span>Project-Based</span></div>
+          <p class="fee-note">Final scope and fee confirmed after diagnostic findings or an initial scoping call.</p>
+        </div></div>
       </div>
     </div>
-    <div class="phase reveal d4">
-      <div class="phase-wk">Weeks 6-10</div>
-      <div class="phase-num">03</div>
-      <h3 class="phase-title">Implementation &amp; Alignment</h3>
-      <ul class="phase-items">
-        <li>Working directly with internal teams in live environments</li>
-        <li>Active gaps fixed in real time</li>
-        <li>One operating model. Full alignment.</li>
+
+    <div class="svc reveal d3">
+      <div class="svc-num">03</div>
+      <div class="svc-tag">Advisory Retainer</div>
+      <h3 class="svc-title">Ongoing Senior Input Advisory Retainer</h3>
+      <div class="svc-scope">Monthly Retainer</div>
+      <p class="svc-desc">Standing senior input on delivery, sponsorship, and operational decisions: a second set of experienced eyes before issues reach the field.</p>
+      <ul class="svc-list">
+        <li>Monthly delivery review</li>
+        <li>On-call senior input</li>
+        <li>Sponsor &amp; partner correspondence review</li>
+        <li>Quarterly strategy check-in</li>
       </ul>
-      <div class="phase-outcome">
-        <div class="phase-outcome-lbl">Outcome</div>
-        <div class="phase-outcome-text">An organisation that delivers consistently under pressure. Systems owned by your people after I leave.</div>
+      <p class="svc-roi">For organisations that want continuity, not a one-off fix.</p>
+      <p class="svc-bestfor">Best for teams managing an active sponsorship or event calendar year-round</p>
+      <div class="svc-fee-block">
+        <button class="fee-toggle" aria-expanded="false" aria-controls="fee-panel-3"><span>View Monthly Fee</span><span class="fee-plus">+</span></button>
+        <div class="fee-panel" id="fee-panel-3"><div class="fee-panel-inner">
+          <div class="fee-amount">&#8377;3,00,000 <span>/ Month</span></div>
+          <p class="fee-note">Minimum three-month commitment. Cancel with 30 days&rsquo; notice thereafter.</p>
+        </div></div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ============================================================
-     CASE RESULTS
-     ============================================================ -->
-<section class="cases" id="cases">
-  <div class="eyebrow on-ivory reveal" style="color:var(--teal);">Selected Work</div>
-  <h2 class="cases-headline reveal">What this looks like<br><em>in practice.</em></h2>
-
-  <!-- MINI SCAN STRIP -->
-  <div class="cases-mini reveal">
-    <div class="cm-cell"><div class="cm-label">League &middot; India</div><div class="cm-result">Sponsor complaints &rarr; zero mid-season. Renewals secured.</div></div>
-    <div class="cm-cell"><div class="cm-label">Tournament &middot; Multi-Venue</div><div class="cm-result">Inconsistent delivery &rarr; standardised across all venues.</div></div>
-    <div class="cm-cell"><div class="cm-label">Franchise &middot; Cricket</div><div class="cm-result">Internal misalignment &rarr; unified execution model.</div></div>
-  </div>
-
-  <!-- DETAIL CARDS -->
-  <div class="cases-grid">
-    <div class="case-card reveal d2">
-      <div class="case-label">League &middot; India</div>
-      <div class="case-title">Sponsor Delivery Breakdown Mid-Season</div>
-      <p class="case-situation">Multiple sponsors, inconsistent delivery, rising complaints during an active season. Renewal risk across key commercial partners.</p>
-      <ul class="case-actions">
-        <li>Audited all contractual obligations against actual delivery</li>
-        <li>Rebuilt match-day execution structure and accountability</li>
-        <li>Aligned commercial and operations teams under one framework</li>
+    <div class="svc reveal d4">
+      <div class="svc-num">04</div>
+      <div class="svc-tag">Infrastructure</div>
+      <h3 class="svc-title">Sports Infrastructure Planning &amp; Strategy</h3>
+      <div class="svc-scope">Project-Based</div>
+      <p class="svc-desc">Commercially sustainable venue and infrastructure planning, built to hold up operationally once the ribbon is cut, not just on paper.</p>
+      <ul class="svc-list">
+        <li>Venue Readiness Architecture&trade;</li>
+        <li>Commercial sustainability planning</li>
+        <li>Operational infrastructure design</li>
+        <li>Governance &amp; delivery roadmap</li>
       </ul>
-      <div class="case-result">
-        <div class="case-result-lbl">Result</div>
-        <div class="case-result-text">Zero sponsor escalations for the remainder of the season. Renewals secured across all key accounts. Sponsor complaint rate reduced from active to none within six weeks of engagement.</div>
+      <p class="svc-roi">Infrastructure planned around how it will actually be run.</p>
+      <p class="svc-bestfor">Best for federations, government bodies, and venue developers</p>
+      <div class="svc-fee-block">
+        <button class="fee-toggle" aria-expanded="false" aria-controls="fee-panel-4"><span>View Project Fee</span><span class="fee-plus">+</span></button>
+        <div class="fee-panel" id="fee-panel-4"><div class="fee-panel-inner">
+          <div class="fee-amount">&#8377;25,00,000+ <span>Project-Based</span></div>
+          <p class="fee-note">Scoped to project size, venue count, and timeline.</p>
+        </div></div>
       </div>
     </div>
-    <div class="case-card reveal d3" style="border-top-color:var(--gold);">
-      <div class="case-label" style="color:var(--gold);">Tournament &middot; Multi-Venue</div>
-      <div class="case-title">Operational Inconsistency Across Venues</div>
-      <p class="case-situation">Delivery quality varied significantly across venues. No standardised systems. High execution risk under live broadcast conditions with multiple sponsor activations.</p>
-      <ul class="case-actions">
-        <li>Designed unified delivery and activation framework</li>
-        <li>Implemented venue-level accountability and run-sheet systems</li>
-        <li>Introduced real-time escalation protocols across the operations team</li>
+
+    <div class="svc reveal d5">
+      <div class="svc-num">05</div>
+      <div class="svc-tag">Start-Up</div>
+      <h3 class="svc-title">Sports Business Start-up &amp; Planning</h3>
+      <div class="svc-scope">Project-Based</div>
+      <p class="svc-desc">End-to-end planning for a new sports property, league, or venture, built on the Sports IP Launch Framework&trade; so launch-day delivery doesn&rsquo;t become a scramble.</p>
+      <ul class="svc-list">
+        <li>Sports IP Launch Framework&trade;</li>
+        <li>Commercial &amp; operating model</li>
+        <li>Sponsorship &amp; partnership strategy</li>
+        <li>Launch delivery plan</li>
       </ul>
-      <div class="case-result" style="border-left-color:var(--gold);">
-        <div class="case-result-lbl" style="color:var(--gold2);">Result</div>
-        <div class="case-result-text">Consistent delivery standardised across all venues within three weeks. Broadcast compliance maintained at 100% for the remainder of the tournament. Sponsor activation fulfilment improved across every venue simultaneously.</div>
+      <p class="svc-roi">Structured before launch, not repaired after it.</p>
+      <p class="svc-bestfor">Best for founders and investors building a new sports property</p>
+      <div class="svc-fee-block">
+        <button class="fee-toggle" aria-expanded="false" aria-controls="fee-panel-5"><span>View Project Fee</span><span class="fee-plus">+</span></button>
+        <div class="fee-panel" id="fee-panel-5"><div class="fee-panel-inner">
+          <div class="fee-amount">&#8377;15,00,000+ <span>Project-Based</span></div>
+          <p class="fee-note">Scoped to venture size and pre-launch timeline.</p>
+        </div></div>
       </div>
     </div>
-    <div class="case-card reveal d4" style="border-top-color:var(--pearl3);">
-      <div class="case-label" style="color:var(--pearl2);">Franchise &middot; Major Cricket League</div>
-      <div class="case-title">Commercial and Operations Misalignment</div>
-      <p class="case-situation">Sponsors sold aggressively at commercial level, but execution teams unable to deliver at the same scale. Internal friction increasing. Partner confidence at risk.</p>
-      <ul class="case-actions">
-        <li>Mapped all sponsor commitments against execution capacity</li>
-        <li>Redefined internal ownership, workflows and escalation paths</li>
-        <li>Built shared delivery language and accountability across teams</li>
+
+    <div class="svc reveal d6">
+      <div class="svc-num">06</div>
+      <div class="svc-tag">Youth Programme</div>
+      <h3 class="svc-title">Youth Athlete Management &amp; Programme Design</h3>
+      <div class="svc-scope">Programme-Based</div>
+      <p class="svc-desc">Structured development pathways for youth athletes and academies, built on the Athlete Development Pathway System&trade;.</p>
+      <ul class="svc-list">
+        <li>Athlete Development Pathway System&trade;</li>
+        <li>Programme design &amp; curriculum</li>
+        <li>Athlete management structure</li>
+        <li>Progress benchmarking framework</li>
       </ul>
-      <div class="case-result" style="border-left-color:var(--pearl3);">
-        <div class="case-result-lbl" style="color:var(--pearl2);">Result</div>
-        <div class="case-result-text">Delivery confidence restored within the first fortnight. All 18 sponsor commitments met for the remainder of the season. Internal escalations between commercial and operations teams dropped to zero by week three.</div>
+      <p class="svc-roi">A pathway athletes can be tracked against, not a loose schedule.</p>
+      <p class="svc-bestfor">Best for academies and youth sport programmes</p>
+      <div class="svc-fee-block">
+        <button class="fee-toggle" aria-expanded="false" aria-controls="fee-panel-6"><span>View Programme Fee</span><span class="fee-plus">+</span></button>
+        <div class="fee-panel" id="fee-panel-6"><div class="fee-panel-inner">
+          <div class="fee-amount">&#8377;5,00,000+ <span>Programme-Based</span></div>
+          <p class="fee-note">Scoped to athlete cohort size and programme duration.</p>
+        </div></div>
       </div>
     </div>
+
+    <div class="svc reveal d1">
+      <div class="svc-num">07</div>
+      <div class="svc-tag">Intensive</div>
+      <h3 class="svc-title">The Fix Program</h3>
+      <div class="svc-scope">8&ndash;10 Weeks</div>
+      <p class="svc-desc">The Execution Integrity System&trade;: a focused, time-boxed intervention for organisations with a single critical delivery problem and a fixed window to solve it.</p>
+      <ul class="svc-list">
+        <li>Execution Integrity System&trade;</li>
+        <li>Root-cause delivery diagnosis</li>
+        <li>Fix implementation, on-site</li>
+        <li>Post-fix verification</li>
+      </ul>
+      <p class="svc-roi">Built for one problem, solved on a fixed clock.</p>
+      <p class="svc-bestfor">Best for organisations facing a single, time-critical delivery failure</p>
+      <div class="svc-fee-block">
+        <button class="fee-toggle" aria-expanded="false" aria-controls="fee-panel-7"><span>View Programme Fee</span><span class="fee-plus">+</span></button>
+        <div class="fee-panel" id="fee-panel-7"><div class="fee-panel-inner">
+          <div class="fee-amount">&#8377;10,00,000 <span>Fixed Fee</span></div>
+          <p class="fee-note">8&ndash;10 weeks, on-site where required.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="svc reveal d2">
+      <div class="svc-num">08</div>
+      <div class="svc-tag">Sponsorship Advisory</div>
+      <h3 class="svc-title">Sponsorship Management Advisor</h3>
+      <div class="svc-scope">Monthly Advisory</div>
+      <p class="svc-desc">Acting as an independent sponsorship advisor for brands, without the cost of hiring a full-time Head of Sponsorship. Experienced commercial oversight across strategy, rights management, activation, and partner relationships.</p>
+      <ul class="svc-list">
+        <li>Sponsorship portfolio management</li>
+        <li>Rights holder relationship management</li>
+        <li>Agency oversight and activation review</li>
+        <li>Commercial negotiations and reporting</li>
+      </ul>
+      <p class="svc-roi">Senior sponsorship judgement, without a full-time hire.</p>
+      <p class="svc-bestfor">Best for brands with an active sponsorship portfolio and no dedicated sponsorship lead</p>
+      <div class="svc-fee-block">
+        <button class="fee-toggle" aria-expanded="false" aria-controls="fee-panel-8"><span>View Monthly Fee</span><span class="fee-plus">+</span></button>
+        <div class="fee-panel" id="fee-panel-8"><div class="fee-panel-inner">
+          <div class="fee-amount">&#8377;2,50,000&ndash;5,00,000 <span>/ Month</span></div>
+          <p class="fee-note">Minimum six-month engagement.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="svc svc-premium reveal d3">
+      <div class="svc-num">09</div>
+      <div class="svc-tag gold-tag">Premium &middot; Executive</div>
+      <h3 class="svc-title">Fractional Head of Sponsorship</h3>
+      <div class="svc-scope">Executive Retainer</div>
+      <p class="svc-desc">Senior strategic leadership for organisations investing in sport without the need for a full-time executive. Sponsorship strategy, rights negotiations, partner management, activation planning, and performance reporting, delivered while working alongside internal marketing and leadership teams.</p>
+      <ul class="svc-list">
+        <li>Embedded sponsorship leadership</li>
+        <li>Strategy, rights, and partner management</li>
+        <li>Direct access to leadership team</li>
+        <li>Ongoing performance reporting</li>
+      </ul>
+      <p class="svc-roi">The most senior, most embedded engagement available, short of a full-time hire.</p>
+      <p class="svc-bestfor">Best for brands spending crores on sport without an experienced sponsorship lead in-house</p>
+      <div class="svc-fee-block">
+        <button class="fee-toggle" aria-expanded="false" aria-controls="fee-panel-9"><span>View Monthly Fee</span><span class="fee-plus">+</span></button>
+        <div class="fee-panel" id="fee-panel-9"><div class="fee-panel-inner">
+          <div class="fee-amount">&#8377;5,00,000&ndash;8,00,000 <span>/ Month</span></div>
+          <p class="fee-note">Minimum six-month engagement.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+  <p class="eng-note reveal d2">All fees exclude applicable taxes &middot; Final scope confirmed on a discovery call</p>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="proof-sec sp" id="proof">
+  <div class="eyebrow reveal d1">Sports Advisory Services &middot; Track Record</div>
+  <h2 class="section-title reveal d2">Proof, <em>not just positioning.</em></h2>
+  <div class="proof-grid">
+    <div class="proof-card reveal d1"><div class="proof-label">Recognition</div><div class="proof-text">U.S. State Department &middot; Top 25 Young Women in Sports Business Globally</div></div>
+    <div class="proof-card reveal d2"><div class="proof-label">Delivery Record</div><div class="proof-text">Nine consecutive Pro Kabaddi League seasons with 100% delivery on central sponsor commitments</div></div>
+    <div class="proof-card reveal d3"><div class="proof-label">Scale</div><div class="proof-text">INR 100Cr+ in sponsorships managed and activated across 1,500+ matches and 50+ venues</div></div>
+    <div class="proof-card proof-open reveal d4"><div class="proof-label">Client Outcomes</div><div class="proof-text">Space reserved for measurable client results as engagements are completed and cleared for publication.</div></div>
+    <div class="proof-card proof-open reveal d5"><div class="proof-label">Speaking &amp; Publications</div><div class="proof-text">Space reserved for conference appearances, articles and media features as they are confirmed.</div></div>
+    <div class="proof-card proof-open reveal d6"><div class="proof-label">Client Testimonials</div><div class="proof-text">Space reserved for direct client testimonials, added as they're received.</div></div>
   </div>
 </section>
 
-<!-- ============================================================
-     OBJECTIONS — WHAT THIS IS NOT
-     ============================================================ -->
-<section class="objections" id="objections">
-  <div class="eyebrow reveal">Clarity</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,40px);align-items:center;margin-bottom:clamp(20px,3.5vh,36px);" class="reveal">
-    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5vw,5rem);line-height:0.9;color:var(--white);">What this is<br><em style="color:var(--teal2);">not.</em></h2>
-    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5vw,5rem);line-height:0.9;color:var(--white);">What this<br><em style="color:var(--teal2);">is.</em></h2>
-  </div>
-  <div class="obj-grid">
-    <div class="obj-not reveal d2">
-      <div class="obj-not-item">
-        <div class="obj-not-x">&times;</div>
-        <div><div class="obj-not-title">Not a strategy deck</div><div class="obj-not-text">This is not theoretical consulting. No presentations that sit in a folder unused. The focus is execution inside live environments.</div></div>
-      </div>
-      <div class="obj-not-item">
-        <div class="obj-not-x">&times;</div>
-        <div><div class="obj-not-title">Not junior consulting</div><div class="obj-not-text">You work directly with senior experience at every stage. No handoffs, no junior team members, no dilution of accountability.</div></div>
-      </div>
-      <div class="obj-not-item">
-        <div class="obj-not-x">&times;</div>
-        <div><div class="obj-not-title">Not long-term dependency</div><div class="obj-not-text">The goal is to build systems your team runs independently. Not to create a reliance that requires ongoing external management.</div></div>
-      </div>
-      <div class="obj-not-item">
-        <div class="obj-not-x">&times;</div>
-        <div><div class="obj-not-title">Not disruptive to operations</div><div class="obj-not-text">Work is integrated into your existing structure without slowing active seasons, live delivery, or commercial commitments.</div></div>
-      </div>
-    </div>
-    <div class="obj-is reveal d3">
-      <div class="obj-is-item">
-        <div class="obj-is-check">&#10003;</div>
-        <div><div class="obj-is-title">Hands-on execution fixing</div><div class="obj-is-text">I work inside your live environment, not outside it. The fixing happens in real time, alongside your team.</div></div>
-      </div>
-      <div class="obj-is-item">
-        <div class="obj-is-check">&#10003;</div>
-        <div><div class="obj-is-title">Senior-level direct involvement</div><div class="obj-is-text">Every engagement is led and delivered personally. The experience you see on the track record is the experience you get.</div></div>
-      </div>
-      <div class="obj-is-item">
-        <div class="obj-is-check">&#10003;</div>
-        <div><div class="obj-is-title">Systems built to last</div><div class="obj-is-text">The frameworks, accountability structures and delivery systems built during the engagement are owned by your people after it ends.</div></div>
-      </div>
-      <div class="obj-is-item">
-        <div class="obj-is-check">&#10003;</div>
-        <div><div class="obj-is-title">Outcome measured in results</div><div class="obj-is-text">Success is measured in sponsor retention, delivery consistency and team accountability. Not in pages of recommendations.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============================================================
-     NOT FOR EVERYONE
-     ============================================================ -->
-<section style="background:var(--teal);padding:clamp(56px,9vh,80px) var(--sp);" id="not-for">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center;">
-    <div>
-      <div class="eyebrow reveal" style="color:rgba(10,14,20,0.5);">Selectivity</div>
-      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5vw,5rem);line-height:0.9;color:var(--slate);margin-bottom:clamp(14px,2.5vh,24px);" class="reveal">This is not<br><em>for everyone.</em></h2>
-      <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.8rem,1.5vw,1rem);color:rgba(10,14,20,0.6);line-height:1.82;max-width:420px;" class="reveal">A small number of engagements are taken on at any one time. Each one receives direct, senior-level involvement. That is not scalable at volume, and that is intentional.</p>
-    </div>
-    <div class="reveal">
-      <div style="display:flex;flex-direction:column;gap:clamp(6px,1.1vh,10px);">
-        <div style="padding:clamp(12px,2.2vh,18px) clamp(14px,2.5vw,22px);background:rgba(0,0,0,0.08);display:flex;gap:14px;align-items:flex-start;">
-          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1rem,2vw,1.4rem);color:rgba(10,14,20,0.25);flex-shrink:0;">&times;</span>
-          <div>
-            <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.82rem,1.6vw,1.1rem);letter-spacing:0.07em;text-transform:uppercase;color:var(--slate);margin-bottom:3px;">Organisations seeking general marketing support</div>
-            <div style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.64rem,1.1vw,0.78rem);color:rgba(10,14,20,0.55);line-height:1.6;">This is operational and commercial consulting, not brand or content services.</div>
-          </div>
-        </div>
-        <div style="padding:clamp(12px,2.2vh,18px) clamp(14px,2.5vw,22px);background:rgba(0,0,0,0.08);display:flex;gap:14px;align-items:flex-start;">
-          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1rem,2vw,1.4rem);color:rgba(10,14,20,0.25);flex-shrink:0;">&times;</span>
-          <div>
-            <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.82rem,1.6vw,1.1rem);letter-spacing:0.07em;text-transform:uppercase;color:var(--slate);margin-bottom:3px;">Teams looking only for presentations</div>
-            <div style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.64rem,1.1vw,0.78rem);color:rgba(10,14,20,0.55);line-height:1.6;">The engagement produces implemented systems, not slide decks.</div>
-          </div>
-        </div>
-        <div style="padding:clamp(12px,2.2vh,18px) clamp(14px,2.5vw,22px);background:rgba(0,0,0,0.08);display:flex;gap:14px;align-items:flex-start;">
-          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1rem,2vw,1.4rem);color:rgba(10,14,20,0.25);flex-shrink:0;">&times;</span>
-          <div>
-            <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.82rem,1.6vw,1.1rem);letter-spacing:0.07em;text-transform:uppercase;color:var(--slate);margin-bottom:3px;">Projects without implementation commitment</div>
-            <div style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.64rem,1.1vw,0.78rem);color:rgba(10,14,20,0.55);line-height:1.6;">Frameworks built here are designed to be used, not archived.</div>
-          </div>
-        </div>
-        <div style="padding:clamp(12px,2.2vh,18px) clamp(14px,2.5vw,22px);background:rgba(0,0,0,0.08);display:flex;gap:14px;align-items:flex-start;">
-          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1rem,2vw,1.4rem);color:rgba(10,14,20,0.25);flex-shrink:0;">&times;</span>
-          <div>
-            <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.82rem,1.6vw,1.1rem);letter-spacing:0.07em;text-transform:uppercase;color:var(--slate);margin-bottom:3px;">Low-budget advisory requests</div>
-            <div style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.64rem,1.1vw,0.78rem);color:rgba(10,14,20,0.55);line-height:1.6;">The fee reflects direct senior involvement and full accountability for outcomes.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     PROOF
-     ============================================================ -->
-<section class="proof" id="proof">
-  <div class="proof-bg"></div>
-  <div class="eyebrow reveal" style="color:var(--teal2);">The Track Record</div>
-  <div class="proof-inner">
-    <div>
-      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5vw,4.5rem);line-height:0.9;color:var(--white);margin-bottom:clamp(16px,3vh,28px);" class="reveal">19 years. <em style="font-style:italic;color:var(--teal2);">Zero delivery failures.</em></h2>
-      <div class="proof-stats reveal">
-        <div class="pstat"><div class="pstat-num"><span class="pstat-pre">INR </span>100<span class="pstat-suf">Cr+</span></div><div class="pstat-lbl">Sponsorships Managed and Activated</div></div>
-        <div class="pstat"><div class="pstat-num">1,500<span class="pstat-suf">+</span></div><div class="pstat-lbl">Matches Delivered at Scale</div></div>
-        <div class="pstat"><div class="pstat-num">50<span class="pstat-suf">+</span></div><div class="pstat-lbl">Venues Managed Across Career</div></div>
-        <div class="pstat"><div class="pstat-num">230</div><div class="pstat-lbl">Staff Led Simultaneously at a Single Event</div></div>
-      </div>
-      <div class="proof-quote reveal">
-        <p>I have spent 19 years at the point where sponsors expect delivery, broadcast standards must be met, and there is no margin for error. I have built and run systems where failure was not an option. And it did not occur.</p>
-        <div class="proof-attr">Kimberly-Ann Athayde &middot; Mumbai &middot; Available Globally</div>
-      </div>
-      <div class="proof-props reveal">
-        <span class="proof-prop">Indian Premier League</span>
-        <span class="proof-prop">Pro Kabaddi League</span>
-        <span class="proof-prop">Indian Super League</span>
-        <span class="proof-prop">ICC T20 World Cup</span>
-        <span class="proof-prop">UEFA Champions League Finals</span>
-        <span class="proof-prop">ATP Masters Tennis</span>
-        <span class="proof-prop">London 2012 Olympics</span>
-        <span class="proof-prop">Delhi Capitals &middot; IPL</span>
-        <span class="proof-prop">Lusofonia Games 2014</span>
-      </div>
-    </div>
-    <div>
-      <div class="eyebrow reveal" style="color:var(--gold2);">Recognition</div>
-      <div class="proof-rec-block reveal">
-        <div class="prec">
-          <div class="prec-icon">&#9651;</div>
-          <div>
-            <div class="prec-label">U.S. State Department</div>
-            <div class="prec-text">Top 25 Young Women in Sports Business Globally</div>
-          </div>
-        </div>
-        <div class="prec">
-          <div class="prec-icon">&#9651;</div>
-          <div>
-            <div class="prec-label">London 2012 Olympics</div>
-            <div class="prec-text">Volunteer contributor to sport presentation across Olympic venues</div>
-          </div>
-        </div>
-        <div class="prec">
-          <div class="prec-icon">&#9651;</div>
-          <div>
-            <div class="prec-label">Sports Business Awards</div>
-            <div class="prec-text">Top 3 Finalist &middot; 5-a-side National Championship Delivery</div>
-          </div>
-        </div>
-        <div class="prec">
-          <div class="prec-icon">&#9651;</div>
-          <div>
-            <div class="prec-label">MA Sports Management</div>
-            <div class="prec-text">London Metropolitan University &middot; MBA Marketing and HR &middot; Indian Institute of Planning and Management</div>
-          </div>
-        </div>
-        <div class="prec" style="background:rgba(0,184,156,0.04);border-color:rgba(0,212,184,0.14);">
-          <div class="prec-icon" style="color:var(--teal2);">&#9651;</div>
-          <div>
-            <div class="prec-label" style="color:var(--teal2);">Engagement model</div>
-            <div class="prec-text">Limited concurrent engagements to ensure direct personal involvement in every mandate. Senior-level participation is not optional. It is the product.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============================================================
-     WHY KIMBERLY — OPERATIONAL DOCTRINE
-     ============================================================ -->
-<section style="background:var(--ivory);padding:clamp(72px,11vh,100px) var(--sp) clamp(40px,7vh,72px);" id="why">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:start;">
-    <div>
-      <div class="eyebrow reveal" style="color:var(--teal);">The Operator Behind the Consulting</div>
-      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2rem,5vw,5rem);line-height:0.9;color:var(--ink);margin-bottom:clamp(16px,3vh,28px);" class="reveal">Why I do this.<br><em>And why it works.</em></h2>
-      <div style="font-family:'Libre Baskerville',serif;font-size:clamp(0.82rem,1.5vw,1rem);color:#333;line-height:1.88;" class="reveal">
-        <p style="margin-bottom:clamp(12px,2.2vh,20px);">For 19 years I stood inside the live environment — at ICC T20 World Cup venues, on ISL and Pro Kabaddi League match floors, in Delhi Capitals sponsor servicing rooms — where the consequences of poor execution were immediate, measurable, and public.</p>
-        <p style="margin-bottom:clamp(12px,2.2vh,20px);">Across every one of those environments the same pattern repeated: strong commercial ambition, insufficient operational architecture to support it. Sponsorship commitments signed before delivery systems existed. Venues planned without revenue models. Leagues launched without governance frameworks to survive year two.</p>
-        <p>That is what I fix. Not with theory. With frameworks built from having been inside the problem — not from having read about it.</p>
-      </div>
-    </div>
-    <div class="reveal">
-      <div style="display:flex;flex-direction:column;gap:clamp(8px,1.4vh,12px);">
-        <div style="padding:clamp(16px,2.8vh,26px) clamp(16px,2.8vw,26px);background:var(--slate);border-left:4px solid var(--teal);">
-          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.85rem,1.7vw,1.2rem);letter-spacing:0.07em;text-transform:uppercase;color:var(--white);margin-bottom:6px;">Execution inside live sport is a different discipline.</div>
-          <div style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.68rem,1.2vw,0.84rem);color:var(--pearl);line-height:1.68;">There is no pause button. No revision cycle. No second delivery. The match starts. The sponsor activation either lands or it doesn't. The medal ceremony runs to plan or it doesn't. In those environments, you build the discipline to get it right first time, every time.</div>
-        </div>
-        <div style="padding:clamp(16px,2.8vh,26px) clamp(16px,2.8vw,26px);background:var(--ivory2);border-left:4px solid var(--teal);">
-          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.85rem,1.7vw,1.2rem);letter-spacing:0.07em;text-transform:uppercase;color:var(--ink);margin-bottom:6px;">Sponsorship failure is almost always an operations problem.</div>
-          <div style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.68rem,1.2vw,0.84rem);color:#555;line-height:1.68;">Sponsors do not leave because the deal was bad. They leave because what was promised was not delivered. The fix is almost never commercial. It is operational. It is a systems problem. And systems problems have systems solutions.</div>
-        </div>
-        <div style="padding:clamp(16px,2.8vh,26px) clamp(16px,2.8vw,26px);background:var(--ivory2);border-left:4px solid var(--gold);">
-          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.85rem,1.7vw,1.2rem);letter-spacing:0.07em;text-transform:uppercase;color:var(--ink);margin-bottom:6px;">Infrastructure built without commercial logic is capital at risk.</div>
-          <div style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(0.68rem,1.2vw,0.84rem);color:#555;line-height:1.68;">Across every sports infrastructure project I have seen, the decisions that cost the most were made before the commercial and operational frameworks existed. A venue without a programming strategy. A facility without a revenue model. Build the system first. Then the structure.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     CONSTRAINTS
-     ============================================================ -->
-<section class="constraints" id="constraints">
-  <div class="con-inner">
-    <div>
-      <div class="eyebrow reveal" style="color:var(--gold2);">Engagement Model</div>
-      <h2 class="con-hed reveal">Limited engagements.<br><em>Direct involvement.</em></h2>
-      <p class="con-body reveal">Direct, hands-on involvement across your organisation including live environments. A small number of engagements at any one time. If your season window is close, early conversations matter.</p>
-    </div>
-    <div class="con-cards reveal">
-      <div class="con-card">
-        <div class="con-card-accent" style="background:var(--teal2);"></div>
-        <div><div class="con-card-title">Most consultants advise.</div><div class="con-card-text">I fix execution inside live environments where failure is visible, costly, and public. That is a fundamentally different kind of involvement.</div></div>
-      </div>
-      <div class="con-card">
-        <div class="con-card-accent" style="background:var(--gold);"></div>
-        <div><div class="con-card-title">Visible improvements within 2 to 3 weeks.</div><div class="con-card-text">Not at the end of a report cycle. In the first fortnight, inside the live environment, where it matters.</div></div>
-      </div>
-      <div class="con-card">
-        <div class="con-card-accent" style="background:var(--pearl3);"></div>
-        <div><div class="con-card-title">Systems that outlast the engagement.</div><div class="con-card-text">Built to be owned and run by your people. Season after season, without needing external management.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     FINAL CTA
-     ============================================================ -->
-<section class="final" id="final-cta">
-  <div class="final-bg"></div>
-  <div class="final-grid"></div>
-  <div class="final-inner">
-    <!-- Recognition strip -->
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(12px,2.5vw,24px);margin-bottom:clamp(24px,4vh,44px);" class="reveal">
-      <div style="padding:clamp(10px,1.8vh,16px) clamp(14px,2.5vw,22px);background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.15);text-align:center;">
-        <div style="font-family:'DM Mono',monospace;font-size:clamp(0.32rem,0.72vw,0.44rem);letter-spacing:0.22em;text-transform:uppercase;color:var(--gold2);margin-bottom:4px;">U.S. State Department</div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.72rem,1.3vw,0.96rem);letter-spacing:0.04em;text-transform:uppercase;color:var(--white);">Top 25 Women in Sports Business Globally</div>
-      </div>
-      <div style="padding:clamp(10px,1.8vh,16px) clamp(14px,2.5vw,22px);background:rgba(255,255,255,0.03);border:1px solid var(--bdark);text-align:center;">
-        <div style="font-family:'DM Mono',monospace;font-size:clamp(0.32rem,0.72vw,0.44rem);letter-spacing:0.22em;text-transform:uppercase;color:var(--pearl3);margin-bottom:4px;">London 2012 Olympics</div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.72rem,1.3vw,0.96rem);letter-spacing:0.04em;text-transform:uppercase;color:var(--white);">Sport Presentation Contributor</div>
-      </div>
-      <div style="padding:clamp(10px,1.8vh,16px) clamp(14px,2.5vw,22px);background:rgba(255,255,255,0.03);border:1px solid var(--bdark);text-align:center;">
-        <div style="font-family:'DM Mono',monospace;font-size:clamp(0.32rem,0.72vw,0.44rem);letter-spacing:0.22em;text-transform:uppercase;color:var(--pearl3);margin-bottom:4px;">Sports Business Awards</div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(0.72rem,1.3vw,0.96rem);letter-spacing:0.04em;text-transform:uppercase;color:var(--white);">Top 3 Finalist</div>
-      </div>
-    </div>
-    <div class="final-kicker reveal">The Risk Is Already There</div>
-    <h2 class="final-h2 reveal">Before it becomes<br><em>visible, fix it.</em></h2>
-    <div class="final-rule reveal"></div>
-    <p class="final-body reveal">Most delivery problems are detectable before they surface publicly. A sponsor who does not renew, an event that underdelivers, a team that is not aligned: these are not surprises. They are patterns. The first conversation is confidential, no-obligation, and focused entirely on your current situation.</p>
-    <div class="final-qualifier reveal">
-      <div class="fq-label">What is the right first step for you?</div>
-      <div class="fq-links">
-        <a class="fq-link" href="mailto:kimberly.athayde@gmail.com?subject=Pre-Season Check Enquiry"><span class="fq-arrow">&rarr;</span> Pre-season planning and risk assessment</a>
-        <a class="fq-link" href="mailto:kimberly.athayde@gmail.com?subject=Active Delivery Issues Enquiry"><span class="fq-arrow">&rarr;</span> Active delivery issues requiring immediate attention</a>
-        <a class="fq-link" href="mailto:kimberly.athayde@gmail.com?subject=Sponsor Risk Enquiry"><span class="fq-arrow" style="color:var(--gold2);">&rarr;</span> Sponsor risk or renewal concerns needing senior input</a>
-        <a class="fq-link" href="mailto:kimberly.athayde@gmail.com?subject=Infrastructure Consulting Enquiry"><span class="fq-arrow" style="color:var(--gold2);">&rarr;</span> Sports infrastructure planning and venue strategy</a>
-        <a class="fq-link" href="mailto:kimberly.athayde@gmail.com?subject=Start-up Planning Enquiry"><span class="fq-arrow">&rarr;</span> New sports business, league or IP launch planning</a>
-        <a class="fq-link" href="mailto:kimberly.athayde@gmail.com?subject=Youth Athlete Management Enquiry" style="border-bottom:none;"><span class="fq-arrow" style="color:var(--pearl2);">&rarr;</span> Youth athlete management or academy programme design</a>
-      </div>
-    </div>
-    <div class="final-btns reveal">
-      <a class="btn btn-p" href="mailto:kimberly.athayde@gmail.com?subject=Risk Conversation - Kimberly-Ann Athayde">Discuss Your Current Risk Exposure</a>
-      <a class="btn btn-s" href="https://www.linkedin.com/in/kimberly-ann-athayde/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-    </div>
-    <div class="final-contact reveal">
-      Sponsorship &amp; Operations &middot; Infrastructure &middot; Start-ups &middot; Youth Athlete Management<br>Mumbai-based &middot; Available globally &middot; On-site &middot; Hybrid &middot; Remote &middot; Limited concurrent engagements<br>
-      <a href="mailto:kimberly.athayde@gmail.com?subject=Consulting Enquiry">kimberly.athayde@gmail.com</a>
-    </div>
+<!-- CTA -->
+<section class="cta-sec sp" id="contact">
+  <h2 class="cta-headline reveal d1">Ready to find out <em>where delivery breaks?</em></h2>
+  <p class="cta-body reveal d2">Start with a Targeted Diagnostic, or reach out directly to discuss which engagement fits.</p>
+  <div class="cta-btns reveal d3">
+    <a href="mailto:kimberly.athayde@gmail.com?subject=Consulting Enquiry - Kimberly-Ann Athayde" class="btn btn-p">Request a Confidential Assessment</a>
+    <a href="https://www.linkedin.com/in/kimberly-ann-athayde/" target="_blank" rel="noopener" class="btn btn-s">Connect on LinkedIn</a>
   </div>
 </section>
 
 <footer>
-  <div class="foot-logo">Kimberly-Ann <span>Athayde</span></div>
-  <nav class="foot-links">
-    <a class="foot-link" href="index.html">Profile</a>
-    <a class="foot-link" href="consulting.html">Consulting</a>
-    <a class="foot-link" href="index.html#s-career1">Experience</a>
-    <a class="foot-link" href="https://www.linkedin.com/in/kimberly-ann-athayde/" target="_blank">LinkedIn</a>
+  <div class="footer-logo">Kimberly-Ann <span>Athayde</span></div>
+  <nav class="footer-nav">
+    <a href="index.html" class="footer-link">Profile</a>
+    <a href="consulting.html" class="footer-link current">Consulting</a>
+    <a href="https://www.linkedin.com/in/kimberly-ann-athayde/" target="_blank" class="footer-link">LinkedIn</a>
   </nav>
-  <div class="foot-note">Any Sport &middot; Any Market &middot; Worldwide &middot; 2026</div>
+  <div class="footer-tag">Any Sport &middot; Any Market &middot; Worldwide &middot; 2026</div>
 </footer>
 
 <script>
-/* Progress bar */
-window.addEventListener('scroll', function() {
+/* PROGRESS BAR */
+function updateProgress(){
+  var h = document.documentElement;
+  var scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
   var bar = document.getElementById('progressBar');
-  if (bar) {
-    var pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-    bar.style.width = Math.min(pct, 100) + '%';
-  }
-});
+  if (bar) bar.style.width = (scrolled || 0) + '%';
+}
+document.addEventListener('scroll', updateProgress, { passive: true });
+updateProgress();
 
-/* Reveal on scroll */
-var revealObs = new IntersectionObserver(function(entries) {
-  entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('in'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(function(r) { revealObs.observe(r); });
+/* REVEAL ON SCROLL */
+var revealEls = document.querySelectorAll('.reveal');
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.15 });
+revealEls.forEach(function(el){ io.observe(el); });
 
-/* Active jump nav link */
-var sections = document.querySelectorAll('section[id]');
-var jnLinks = document.querySelectorAll('.jn-link:not(.jn-cta)');
-var scrollObs = new IntersectionObserver(function(entries) {
-  entries.forEach(function(e) {
-    if (e.isIntersecting) {
-      jnLinks.forEach(function(l) { l.style.color = ''; l.style.borderBottomColor = ''; });
-      var active = document.querySelector('.jn-link[href="#' + e.target.id + '"]');
-      if (active) { active.style.color = 'var(--teal2)'; active.style.borderBottomColor = 'var(--teal2)'; }
+/* MOBILE NAV: active state by nearest section */
+var mobBtns = document.querySelectorAll('.mob-nav-btn[data-target]');
+var navSections = ['hero','for-brands','capabilities','engagement'].map(function(id){ return document.getElementById(id); }).filter(Boolean);
+var navIo = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if (e.isIntersecting){
+      mobBtns.forEach(function(btn){ btn.classList.toggle('active', btn.dataset.target === e.target.id); });
     }
   });
 }, { threshold: 0.4 });
-sections.forEach(function(s) { scrollObs.observe(s); });
+navSections.forEach(function(s){ navIo.observe(s); });
+mobBtns.forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var el = document.getElementById(btn.dataset.target);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
 
-/* Custom cursor */
+/* FEE TOGGLES */
+document.querySelectorAll('.fee-toggle').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var panel = document.getElementById(btn.getAttribute('aria-controls'));
+    var isOpen = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    panel.classList.toggle('open', !isOpen);
+  });
+});
+
+/* SMOOTH SCROLL for in-page anchors */
+document.querySelectorAll('a[href^="#"]').forEach(function(link){
+  link.addEventListener('click', function(e){
+    var href = link.getAttribute('href');
+    var t = document.querySelector(href);
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+
+/* CUSTOM CURSOR (desktop) */
 if (window.matchMedia('(pointer:fine)').matches) {
-  var cur = document.getElementById('cursor');
+  var cursor = document.getElementById('cursor');
   var ring = document.getElementById('cursorRing');
-  if (cur && ring) {
+  if (cursor && ring) {
     var mx = 0, my = 0, rx = 0, ry = 0;
-    document.addEventListener('mousemove', function(e) { mx = e.clientX; my = e.clientY; cur.style.left = mx + 'px'; cur.style.top = my + 'px'; });
-    (function anim() { rx += (mx - rx) * 0.13; ry += (my - ry) * 0.13; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(anim); })();
-    document.querySelectorAll('a, button, .svc, .case-card, .phase, .diag-item, .obj-not-item, .obj-is-item, .trigger-item').forEach(function(el) {
-      el.addEventListener('mouseenter', function() { ring.classList.add('hovered'); });
-      el.addEventListener('mouseleave', function() { ring.classList.remove('hovered'); });
+    document.addEventListener('mousemove', function(e){
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+    });
+    (function anim(){
+      rx += (mx - rx) * 0.13; ry += (my - ry) * 0.13;
+      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+      requestAnimationFrame(anim);
+    })();
+    document.querySelectorAll('a, button, .svc, .wh-card, .proof-card, .cap').forEach(function(el){
+      el.addEventListener('mouseenter', function(){ ring.classList.add('hovered'); });
+      el.addEventListener('mouseleave', function(){ ring.classList.remove('hovered'); });
     });
   }
 }
 </script>
-
-<!-- MOBILE BOTTOM NAV -->
-<nav class="mob-nav" aria-label="Mobile navigation">
-  <a class="mob-btn active" href="#hero">
-    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-    Home
-  </a>
-  <a class="mob-btn" href="#decision">
-    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-    Services
-  </a>
-  <a class="mob-btn" href="#cases">
-    <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-    Results
-  </a>
-  <a class="mob-btn" href="index.html">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-    Profile
-  </a>
-  <a class="mob-btn" href="#final-cta">
-    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011.18 1.18 2 2 0 013 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-    Contact
-  </a>
-</nav>
 
 </body>
 </html>
